@@ -2,11 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 
 import 'expose-loader?$!expose-loader?jQuery!jquery'
+import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
-import 'bootstrap'
-import 'admin-lte'
 
 import Vue from 'vue'
 import App from './App'
