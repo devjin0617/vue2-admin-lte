@@ -35,7 +35,8 @@
           </a>
           <ul class="treeview-menu">
             <li><a href=""><i class="fa fa-circle-o"></i> <router-link to="/">헬로화면</router-link></a></li>
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> <router-link to="/sample">샘플화면</router-link></a></li>
+            <li class="active"><a href=""><i class="fa fa-circle-o"></i> <router-link to="/sample">샘플화면</router-link></a></li>
+            <li class="active"><a href=""><i class="fa fa-circle-o"></i> <router-link to="/dashboard/v1">Dashboard v1</router-link></a></li>
           </ul>
         </li>
         <li class="treeview">

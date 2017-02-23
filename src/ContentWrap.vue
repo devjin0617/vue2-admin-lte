@@ -13,9 +13,11 @@
       </ol>
     </section>
 
-    <transition name="fade">
-      <router-view></router-view>
-    </transition>
+    <section class="content">
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
