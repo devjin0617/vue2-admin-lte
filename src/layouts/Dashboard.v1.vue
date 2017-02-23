@@ -38,11 +38,18 @@
         </SmallBox>
       </div>
     </div>
+
+    <div class="row">
+      <section class="col-lg-7 connectedSortable ui-sortable">
+        <ChatBox></ChatBox>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
 import SmallBox from '../components/SmallBox.vue'
+import ChatBox from '../components/ChatBox.vue'
 
 export default {
   name: 'dashboard',
@@ -52,7 +59,8 @@ export default {
     }
   },
   components: {
-    SmallBox
+    SmallBox,
+    ChatBox
   }
 }
 
