@@ -16,8 +16,8 @@
     "admin-lte": "^2.3.11",
     "bootstrap": "^3.3.7",
     "jquery": "^3.1.1",
-    "vue": "^2.1.10",
-    "vue-router": "^2.2.0",
+    "vue": "^2.2.1",
+    "vue-router": "^2.3.0",
     "expose-loader": "^0.7.3"
   },
   "devDependencies": {
