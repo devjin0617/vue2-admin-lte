@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from 'components/Hello.vue'
 import Sample from 'components/Sample.vue'
 import DashboardV1 from 'layouts/Dashboard.v1.vue'
+import InfoBoxExample from 'examples/InfoBoxExample'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/dashboard/v1',
       name: 'DashboardV1',
       component: DashboardV1
+    },
+    {
+      path: '/examples/infobox',
+      name: 'InfoBoxExample',
+      component: InfoBoxExample
     }
   ],
   linkActiveClass: 'active'
