@@ -10,6 +10,7 @@ import 'jquery-slimscroll'
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
+import 'chart.js'
 
 import Vue from 'vue'
 import store from './lib/sotre'
