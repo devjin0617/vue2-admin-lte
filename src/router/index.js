@@ -23,5 +23,6 @@ export default new Router({
       name: 'DashboardV1',
       component: DashboardV1
     }
-  ]
+  ],
+  linkActiveClass: 'active'
 })
