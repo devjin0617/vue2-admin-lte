@@ -39,6 +39,7 @@
             <router-link tag="li" :to="{ name: 'DashboardV1' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v1</a></router-link>
             <router-link tag="li" :to="{ name: 'InfoBoxExample' }"><a href=""><i class="fa fa-circle-o"></i>InfoBox</a></router-link>
             <router-link tag="li" :to="{ name: 'ChartExample' }"><a href=""><i class="fa fa-circle-o"></i>Chart.js</a></router-link>
+            <router-link tag="li" :to="{ name: 'AlertExample' }"><a href=""><i class="fa fa-circle-o"></i>Alert</a></router-link>
           </ul>
         </li>
         <li class="treeview">
