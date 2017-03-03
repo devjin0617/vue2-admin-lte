@@ -4,6 +4,8 @@ import Hello from 'components/Hello.vue'
 import Sample from 'components/Sample.vue'
 import DashboardV1 from 'layouts/Dashboard.v1.vue'
 import InfoBoxExample from 'examples/InfoBoxExample'
+import ChartExample from 'examples/ChartExample'
+import AlertExample from 'examples/AlertExample'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/examples/infobox',
       name: 'InfoBoxExample',
       component: InfoBoxExample
+    },
+    {
+      path: '/examples/chart',
+      name: 'ChartExample',
+      component: ChartExample
+    },
+    {
+      path: '/examples/alert',
+      name: 'AlertExample',
+      component: AlertExample
     }
   ],
   linkActiveClass: 'active'
