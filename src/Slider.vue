@@ -34,9 +34,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href=""><i class="fa fa-circle-o"></i> <router-link :to="{ name: 'Hello'}">헬로화면</router-link></a></li>
-            <li class="active"><a href=""><i class="fa fa-circle-o"></i> <router-link :to="{ name: 'Sample' }">샘플화면</router-link></a></li>
-            <li class="active"><a href=""><i class="fa fa-circle-o"></i> <router-link :to="{ name: 'DashboardV1' }">Dashboard v1</router-link></a></li>
+            <router-link tag="li" :to="{ name: 'Hello'}" exact><a href=""><i class="fa fa-circle-o"></i>헬로화면</a></router-link>
+            <router-link tag="li" :to="{ name: 'Sample' }"><a href=""><i class="fa fa-circle-o"></i>샘플화면</a></router-link>
+            <router-link tag="li" :to="{ name: 'DashboardV1' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v1</a></router-link>
           </ul>
         </li>
         <li class="treeview">
