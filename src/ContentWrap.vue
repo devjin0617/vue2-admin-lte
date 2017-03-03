@@ -14,7 +14,7 @@
     </section>
 
     <section class="content">
-      <transition name="fade">
+      <transition name="page" mode="out-in">
         <router-view></router-view>
       </transition>
     </section>
@@ -33,10 +33,10 @@ export default {
 </script>
 
 <style>
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
 }
-.fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-  opacity: 0
+.page-enter, .page-leave-to {
+  opacity: 0;
 }
 </style>

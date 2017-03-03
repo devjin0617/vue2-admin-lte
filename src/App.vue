@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="wrapper">
-      <Header></Header>
+      <NaviBar></NaviBar>
       <Slider></Slider>
       <ContentWrap></ContentWrap>
     </div>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from 'Header.vue'
+import NaviBar from 'NaviBar.vue'
 import Slider from 'Slider.vue'
 import ContentWrap from 'ContentWrap.vue'
 
@@ -18,7 +18,7 @@ export default {
   created () {
   },
   components: {
-    Header,
+    NaviBar,
     Slider,
     ContentWrap
   }

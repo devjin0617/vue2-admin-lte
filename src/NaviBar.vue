@@ -266,7 +266,7 @@
 <script>
 
 export default {
-  name: 'header',
+  name: 'NaviBar',
   created () {
   }
 }

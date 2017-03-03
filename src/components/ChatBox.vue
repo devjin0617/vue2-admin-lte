@@ -87,9 +87,6 @@
 
 <script>
 export default {
-  name: 'chatBox',
-  data () {
-
-  }
+  name: 'ChatBox'
 }
 </script>
