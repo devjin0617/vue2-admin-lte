@@ -5,6 +5,8 @@ import 'expose-loader?$!expose-loader?jQuery!jquery'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import 'jquery-slimscroll'
+
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
