@@ -21,10 +21,10 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-success">{{ MESSAGE_BADGE }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">You have {{ MESSAGE_BADGE }} messages</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -98,10 +98,10 @@
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning">{{ NOTIFICATION_BADGE }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">You have {{ NOTIFICATION_BADGE }} notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -140,10 +140,10 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <span class="label label-danger">{{ TASK_BADGE }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
+              <li class="header">You have {{ TASK_BADGE }} tasks</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -214,7 +214,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="~admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
+              <span class="hidden-xs">{{ USER_NAME }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -222,7 +222,7 @@
                 <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Alexander Pierce - Web Developer
+                  {{ USER_NAME }} - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -268,6 +268,20 @@
 export default {
   name: 'NaviBar',
   created () {
+  },
+  computed: {
+    MESSAGE_BADGE () {
+      return this.$store.getters.badges.messages
+    },
+    NOTIFICATION_BADGE () {
+      return this.$store.getters.badges.notifications
+    },
+    TASK_BADGE () {
+      return this.$store.getters.badges.tasks
+    },
+    USER_NAME () {
+      return this.$store.getters.user.name
+    }
   }
 }
 

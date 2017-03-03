@@ -12,12 +12,14 @@ import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
 
 import Vue from 'vue'
+import store from './lib/sotre'
 import App from './App'
 import router from './router'
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   template: '<App/>',
   components: { App }
