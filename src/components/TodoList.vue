@@ -118,17 +118,14 @@
 
 export default {
   name: 'TodoList',
-  create () {
-
-  },
   mounted () {
     // jQuery UI sortable for the todo list
-    // $(this.$el).find('.todo-list').sortable({
-    //   placeholder: 'sort-highlight',
-    //   handle: '.handle',
-    //   forcePlaceholderSize: true,
-    //   zIndex: 999999
-    // })
+    $(this.$el).find('.todo-list').sortable({
+      placeholder: 'sort-highlight',
+      handle: '.handle',
+      forcePlaceholderSize: true,
+      zIndex: 999999
+    })
     /* The todo list plugin */
     $(this.$el).find('.todo-list').todolist({
       onCheck: function (ele) {

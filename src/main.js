@@ -6,7 +6,7 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'jquery-slimscroll'
-import 'jquery-ui'
+import 'jquery-ui/ui/widgets/sortable.js'
 
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
