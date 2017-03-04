@@ -15,6 +15,7 @@
   "dependencies": {
     "admin-lte": "^2.3.11",
     "bootstrap": "^3.3.7",
+    "bootstrap3-wysihtml5-bower": "^0.3.3",
     "chart.js": "^2.5.0",
     "expose-loader": "^0.7.3",
     "jquery": "^3.1.1",

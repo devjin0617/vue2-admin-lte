@@ -43,6 +43,7 @@
       <section class="col-lg-7 connectedSortable ui-sortable">
         <ChatBox></ChatBox>
         <TodoList></TodoList>
+        <QuickMail></QuickMail>
       </section>
     </div>
   </div>
@@ -52,6 +53,7 @@
 import SmallBox from '../components/SmallBox.vue'
 import ChatBox from '../components/ChatBox.vue'
 import TodoList from '../components/TodoList.vue'
+import QuickMail from '../components/QuickMail.vue'
 
 export default {
   name: 'dashboard',
@@ -63,7 +65,8 @@ export default {
   components: {
     SmallBox,
     ChatBox,
-    TodoList
+    TodoList,
+    QuickMail
   }
 }
 

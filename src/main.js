@@ -13,6 +13,8 @@ import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
 import 'chart.js'
 
+// import 'bootstrap3-wysihtml5-bower/dist/amd/bootstrap3-wysihtml5.all.js'
+
 import Vue from 'vue'
 import store from './lib/sotre'
 import App from './App'
