@@ -1,6 +1,6 @@
-# vue-admin-lte
+# vue2-admin-lte
 
-> A Vue.js project
+> A Vue.js 2.x project
 
 ## Build Setup
 
