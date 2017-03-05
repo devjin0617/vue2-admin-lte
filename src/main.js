@@ -6,12 +6,14 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'jquery-slimscroll'
-import 'jquery-ui'
+import 'jquery-ui/ui/widgets/sortable.js'
 
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
 import 'chart.js'
+
+// import 'bootstrap3-wysihtml5-bower/dist/amd/bootstrap3-wysihtml5.all.js'
 
 import Vue from 'vue'
 import store from './lib/sotre'
