@@ -14,6 +14,7 @@ import NaviBar from 'NaviBar.vue'
 import Slider from 'Slider.vue'
 import ContentWrap from 'ContentWrap.vue'
 import Modal from './components/Modal.vue'
+import store from './vuex/store.js'
 
 export default {
   name: 'app',
@@ -24,7 +25,8 @@ export default {
     Slider,
     ContentWrap,
     Modal
-  }
+  },
+  store
 }
 </script>
 
