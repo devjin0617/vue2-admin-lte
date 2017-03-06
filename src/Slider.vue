@@ -8,8 +8,8 @@
           <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{ USER_NAME }}</p>
-          <a href="#"><i class="fa fa-circle" :style="`color:${STATUS_COLOR}`"></i> {{ STATUS_NAME }}</a>
+          <p>{{ currentUser.name }}</p>
+          <a href="#"><i class="fa fa-circle" :style="`color:${currentUser.state.color}`"></i> {{ currentUser.state.name }}</a>
         </div>
       </div>
       <!-- search form -->
@@ -206,21 +206,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'slider',
   created () {
 
   },
   computed: {
-    USER_NAME () {
-      return this.$store.getters.user.name
-    },
-    STATUS_COLOR () {
-      return this.$store.getters.user.state.color
-    },
-    STATUS_NAME () {
-      return this.$store.getters.user.state.name
-    }
+    ...mapGetters([
+      'currentUser'
+    ])
   }
 }
 </script>
