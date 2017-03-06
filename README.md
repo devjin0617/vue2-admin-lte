@@ -1,6 +1,9 @@
 # vue2-admin-lte
 
-> A Vue.js 2.x project
+![](https://img.shields.io/badge/AdminLTE-2.3.11-blue.svg) ![](https://img.shields.io/badge/jquery-3.1.1-lightgrey.svg) ![](https://img.shields.io/badge/bootstrap-3.3.7-blue.svg)
+![](https://img.shields.io/badge/vue-2.2.1-brightgreen.svg) ![](https://img.shields.io/badge/vuex-2.2.1-brightgreen.svg) ![](https://img.shields.io/badge/vue--router-2.3.0-green.svg)
+
+> AdminLTE of Admin control panel template Based on Vuejs 2.x Front-end Framework.
 
 ## Build Setup
 
@@ -26,5 +29,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
