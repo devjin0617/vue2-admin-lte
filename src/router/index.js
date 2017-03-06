@@ -6,6 +6,7 @@ import DashboardV1 from 'layouts/Dashboard.v1.vue'
 import InfoBoxExample from 'examples/InfoBoxExample'
 import ChartExample from 'examples/ChartExample'
 import AlertExample from 'examples/AlertExample'
+import ModalExample from 'examples/ModalExample'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/examples/alert',
       name: 'AlertExample',
       component: AlertExample
+    },
+    {
+      path: '/examples/modal',
+      name: 'ModalExample',
+      component: ModalExample
     }
   ],
   linkActiveClass: 'active'
