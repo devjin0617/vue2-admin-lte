@@ -59,14 +59,14 @@
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
-        <li>
+        <router-link tag="li" :to="{ name: 'WidgetsExample' }">
           <a href="pages/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
           </a>
-        </li>
+        </router-link>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>

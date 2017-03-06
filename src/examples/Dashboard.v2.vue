@@ -6,7 +6,8 @@
           bgColor="bg-aqua"
           bgIcon="ion ion-ios-gear-outline"
           text="CPU TRAFFIC"
-          number="90%"
+          number="90"
+          numberType="percentage"
         ></InfoBox>
       </div>
       <div class="col-lg-3 col-xs-6">
@@ -94,9 +95,9 @@
 </template>
 
 <script>
-import InfoBox from '../components/InfoBox.vue'
-import DirectChat from '../components/DirectChat.vue'
-import UserList from '../components/UserList.vue'
+import InfoBox from '../widgets/InfoBox.vue'
+import DirectChat from '../widgets/DirectChat.vue'
+import UserList from '../widgets/UserList.vue'
 
 export default {
   name: 'DashboardV2',

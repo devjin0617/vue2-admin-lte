@@ -8,6 +8,7 @@ import InfoBoxExample from 'examples/InfoBoxExample'
 import ChartExample from 'examples/ChartExample'
 import AlertExample from 'examples/AlertExample'
 import ModalExample from 'examples/ModalExample'
+import WidgetsExample from 'examples/WidgetsExample'
 
 Vue.use(Router)
 
@@ -53,6 +54,11 @@ export default new Router({
       path: '/examples/modal',
       name: 'ModalExample',
       component: ModalExample
+    },
+    {
+      path: '/examples/widgets',
+      name: 'WidgetsExample',
+      component: WidgetsExample
     }
   ],
   linkActiveClass: 'active'

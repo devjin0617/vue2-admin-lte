@@ -53,11 +53,11 @@
 </template>
 
 <script>
-import SmallBox from '../components/SmallBox.vue'
-import ChatBox from '../components/ChatBox.vue'
-import TodoList from '../components/TodoList.vue'
-import QuickMail from '../components/QuickMail.vue'
-import Calendar from '../components/Calendar.vue'
+import SmallBox from '../widgets/SmallBox.vue'
+import ChatBox from '../widgets/ChatBox.vue'
+import TodoList from '../widgets/TodoList.vue'
+import QuickMail from '../widgets/QuickMail.vue'
+import Calendar from '../widgets/Calendar.vue'
 
 export default {
   name: 'dashboard',
