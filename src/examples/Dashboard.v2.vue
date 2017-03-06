@@ -33,6 +33,13 @@
           number="2,000"
         ></InfoBox>
       </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <DirectChat></DirectChat>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-4">
         <InfoBox
           wrapBgColor="bg-yellow"
@@ -81,6 +88,7 @@
 
 <script>
 import InfoBox from '../components/InfoBox.vue'
+import DirectChat from '../components/DirectChat.vue'
 
 export default {
   name: 'DashboardV2',
@@ -88,7 +96,8 @@ export default {
 
   },
   components: {
-    InfoBox
+    InfoBox,
+    DirectChat
   }
 }
 </script>
