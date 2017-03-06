@@ -34,3 +34,47 @@ npm run e2e
 # run all tests
 npm test
 ```
+
+## Example
+
+```vue
+<template>
+
+  <DirectChat
+    :talkList="talkList"
+    :badgeCount="3"
+    theme="primary"
+    title="Direct Chat"
+    placeholder="Type Messages ..."
+  ></DirectChat>
+  
+</template>
+
+
+<script>
+
+export default {
+  name: 'App',
+  data () {
+    return {
+      talkList: [
+        {
+          name: 'Alexander Pierce',
+          date: new Date(),
+          profileImage: 'http://path/to/image',
+          message: `Is this template really for free? That's unbelievable`,
+          isMine: false
+        },
+        {
+          name: 'Sarah Bullock',
+          date: new Date(),
+          profileImage: 'http://path/to/image',
+          message: `You better believe it!`,
+          isMine: true
+        }
+    }
+  }
+}
+
+</script>
+```
