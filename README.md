@@ -25,14 +25,14 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-# run unit tests
-npm run unit
+# run unit tests: comping soon
+# npm run unit
 
-# run e2e tests
-npm run e2e
+# run e2e tests: comping soon
+# npm run e2e
 
-# run all tests
-npm test
+# run all tests: comping soon
+# npm test
 ```
 
 ## Example
