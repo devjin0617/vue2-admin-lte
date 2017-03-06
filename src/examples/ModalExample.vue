@@ -2,64 +2,41 @@
   <div class="container">
     <h1>Modal Example</h1>
     <div class="row">
-      <div class="col-md-12 modal-example">
-        <Modal title="Default Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </Modal>
-      </div>
-      <div class="col-md-12 modal-example">
-        <Modal type="modal-primary" title="Primary Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline">Save changes</button>
-          </div>
-        </Modal>
-      </div>
-      <div class="col-md-12 modal-example">
-        <Modal type="modal-info" title="Info Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline">Save changes</button>
-          </div>
-        </Modal>
-      </div>
-      <div class="col-md-12 modal-example">
-        <Modal type="modal-warning" title="Warning Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline">Save changes</button>
-          </div>
-        </Modal>
-      </div>
-      <div class="col-md-12 modal-example">
-        <Modal type="modal-success" title="Success Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline">Save changes</button>
-          </div>
-        </Modal>
-      </div>
-      <div class="col-md-12 modal-example">
-        <Modal type="modal-danger" title="Danger Modal" description="One Find Body...">
-          <div slot="modal-buttons">
-            <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-outline">Save changes</button>
-          </div>
-        </Modal>
+      <div class="col-md-12">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" @click="openModal">
+          Launch demo modal
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Modal from '../components/Modal'
-
 export default {
-  components: {
-    Modal
+  methods: {
+    openModal () {
+      console.log(this.$bus)
+      this.$bus.$emit('modal-open', {
+        title: 'Hello',
+        description: '내용',
+        type: 'modal-primary',
+        confirmText: '저장 후 닫기',
+        cancelText: '닫기',
+        confirmBefore: () => {
+          window.alert('저장 후 닫기 이전 훅')
+        },
+        confirmAfter: () => {
+          window.alert('저장 후 닫기 이후 훅')
+        },
+        cancelBefore: () => {
+          window.alert('닫기 이전 훅')
+        },
+        cancelAfter: () => {
+          window.alert('닫기 이후 훅')
+        }
+      })
+    }
   }
 }
 </script>

@@ -19,6 +19,9 @@ import Vue from 'vue'
 import store from './lib/sotre'
 import App from './App'
 import router from './router'
+import EventBus from './lib/eventBus.js'
+
+Vue.prototype.$bus = EventBus
 
 /* eslint-disable no-new */
 new Vue({
