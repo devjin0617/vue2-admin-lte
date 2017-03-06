@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from 'components/Hello.vue'
 import Sample from 'components/Sample.vue'
 import DashboardV1 from 'examples/Dashboard.v1.vue'
+import DashboardV2 from 'examples/Dashboard.v2.vue'
 import InfoBoxExample from 'examples/InfoBoxExample'
 import ChartExample from 'examples/ChartExample'
 import AlertExample from 'examples/AlertExample'
@@ -27,6 +28,11 @@ export default new Router({
       path: '/dashboard/v1',
       name: 'DashboardV1',
       component: DashboardV1
+    },
+    {
+      path: '/dashboard/v2',
+      name: 'DashboardV2',
+      component: DashboardV2
     },
     {
       path: '/examples/infobox',

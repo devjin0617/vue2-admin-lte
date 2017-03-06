@@ -1,11 +1,18 @@
 <template>
-  <div class="info-box">
+  <div class="info-box" :class="wrapBgColor">
     <span class="info-box-icon" v-bind:class="bgColor">
       <i v-bind:class="bgIcon"></i>
     </span>
     <div class="info-box-content">
       <span class="info-box-text">{{text}}</span>
       <span class="info-box-number">{{parseNumber}}</span>
+
+      <div class="progress" v-if="isProgress">
+        <div class="progress-bar" :style="`width: ${percentage}%`"></div>
+      </div>
+      <span class="progress-description">
+        {{ progressDescription }}
+      </span>
     </div>
   </div>
 </template>
@@ -15,6 +22,9 @@
   export default {
     name: 'InfoBox',
     props: {
+      'wrapBgColor': {
+        type: String
+      },
       'bgColor': {
         type: String
       },
@@ -29,8 +39,20 @@
         type: String,
         default: 0
       },
-      'number-type': {
+      'numberType': {
         type: String
+      },
+      'percentage': {
+        type: Number,
+        default: 0
+      },
+      'progressDescription': {
+        type: String,
+        default: ''
+      },
+      'isProgress': {
+        type: Boolean,
+        default: false
       }
     },
     computed: {

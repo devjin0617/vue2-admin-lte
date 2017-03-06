@@ -37,6 +37,7 @@
             <router-link tag="li" :to="{ name: 'Hello'}" exact><a href=""><i class="fa fa-circle-o"></i>헬로화면</a></router-link>
             <router-link tag="li" :to="{ name: 'Sample' }"><a href=""><i class="fa fa-circle-o"></i>샘플화면</a></router-link>
             <router-link tag="li" :to="{ name: 'DashboardV1' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v1</a></router-link>
+            <router-link tag="li" :to="{ name: 'DashboardV2' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v2</a></router-link>
             <router-link tag="li" :to="{ name: 'InfoBoxExample' }"><a href=""><i class="fa fa-circle-o"></i>InfoBox</a></router-link>
             <router-link tag="li" :to="{ name: 'ChartExample' }"><a href=""><i class="fa fa-circle-o"></i>Chart.js</a></router-link>
             <router-link tag="li" :to="{ name: 'AlertExample' }"><a href=""><i class="fa fa-circle-o"></i>Alert</a></router-link>
