@@ -4,6 +4,7 @@
       <NaviBar></NaviBar>
       <Slider></Slider>
       <ContentWrap></ContentWrap>
+      <Modal></Modal>
     </div>
   </div>
 </template>
@@ -12,6 +13,7 @@
 import NaviBar from 'NaviBar.vue'
 import Slider from 'Slider.vue'
 import ContentWrap from 'ContentWrap.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
   components: {
     NaviBar,
     Slider,
-    ContentWrap
+    ContentWrap,
+    Modal
   }
 }
 </script>
