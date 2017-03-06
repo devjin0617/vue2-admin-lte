@@ -1,7 +1,10 @@
-# vue2-admin-lte
+<p align = "center">
+<img src="https://github.com/devjin0617/vue2-admin-lte/blob/master/vue2-admin-lte-logo.png?raw=true">
+<br>
+<img src="https://img.shields.io/badge/AdminLTE-2.3.11-blue.svg"> <img src="https://img.shields.io/badge/jquery-3.1.1-lightgrey.svg"> <img src="https://img.shields.io/badge/bootstrap-3.3.7-blue.svg"> <img src="https://img.shields.io/badge/vue-2.2.1-brightgreen.svg"> <img src="https://img.shields.io/badge/vuex-2.2.1-brightgreen.svg"> <img src="https://img.shields.io/badge/vue--router-2.3.0-green.svg">
+</p>
 
-![](https://img.shields.io/badge/AdminLTE-2.3.11-blue.svg) ![](https://img.shields.io/badge/jquery-3.1.1-lightgrey.svg) ![](https://img.shields.io/badge/bootstrap-3.3.7-blue.svg)
-![](https://img.shields.io/badge/vue-2.2.1-brightgreen.svg) ![](https://img.shields.io/badge/vuex-2.2.1-brightgreen.svg) ![](https://img.shields.io/badge/vue--router-2.3.0-green.svg)
+# vue2-admin-lte
 
 > AdminLTE of Admin control panel template Based on Vuejs 2.x Front-end Framework.
 
