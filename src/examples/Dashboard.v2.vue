@@ -35,8 +35,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-6">
-        <DirectChat></DirectChat>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-6">
+            <DirectChat></DirectChat>
+          </div>
+          <div class="col-md-6">
+            <UserList></UserList>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -89,6 +96,7 @@
 <script>
 import InfoBox from '../components/InfoBox.vue'
 import DirectChat from '../components/DirectChat.vue'
+import UserList from '../components/UserList.vue'
 
 export default {
   name: 'DashboardV2',
@@ -97,7 +105,8 @@ export default {
   },
   components: {
     InfoBox,
-    DirectChat
+    DirectChat,
+    UserList
   }
 }
 </script>
