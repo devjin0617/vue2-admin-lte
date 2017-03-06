@@ -194,6 +194,44 @@
         ></Box>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-3 col-sm6 col-xs-12">
+        <DirectChat
+          theme="primary"
+          :talkList="talkList"
+          title="Direct Chat"
+          :badgeCount="3"
+          placeholder="내용을 입력하세요..."
+        ></DirectChat>
+      </div>
+      <div class="col-md-3 col-sm6 col-xs-12">
+        <DirectChat
+          theme="success"
+          :talkList="talkList"
+          title="Direct Chat"
+          :badgeCount="3"
+          placeholder="내용을 입력하세요..."
+        ></DirectChat>
+      </div>
+      <div class="col-md-3 col-sm6 col-xs-12">
+        <DirectChat
+          theme="warning"
+          :talkList="talkList"
+          title="Direct Chat"
+          :badgeCount="3"
+          placeholder="내용을 입력하세요..."
+        ></DirectChat>
+      </div>
+      <div class="col-md-3 col-sm6 col-xs-12">
+        <DirectChat
+          theme="danger"
+          :talkList="talkList"
+          title="Direct Chat"
+          :badgeCount="3"
+          placeholder="내용을 입력하세요..."
+        ></DirectChat>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -201,16 +239,38 @@
 import InfoBox from '../widgets/InfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
 import Box from '../widgets/Box.vue'
+import DirectChat from '../widgets/DirectChat.vue'
 
 export default {
   name: 'WidgetsExample',
+  data () {
+    return {
+      talkList: [
+        {
+          name: 'Alexander Pierce',
+          date: new Date(),
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          message: `Is this template really for free? That's unbelievable`,
+          isMine: false
+        },
+        {
+          name: 'Sarah Bullock',
+          date: new Date(),
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          message: `You better believe it!`,
+          isMine: true
+        }
+      ]
+    }
+  },
   created () {
 
   },
   components: {
     InfoBox,
     SmallBox,
-    Box
+    Box,
+    DirectChat
   }
 }
 </script>

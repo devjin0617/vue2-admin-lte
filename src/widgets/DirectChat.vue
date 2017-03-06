@@ -1,12 +1,12 @@
 <template>
 
   <!-- DIRECT CHAT -->
-  <div class="box box-warning direct-chat direct-chat-warning">
+  <div class="box direct-chat" :class="[boxColor, directChatColor]">
     <div class="box-header with-border">
       <h3 class="box-title">Direct Chat</h3>
 
       <div class="box-tools pull-right">
-        <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
+        <span data-toggle="tooltip" title="3 New Messages" class="badge" :class="badgeColor">3</span>
         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
         </button>
         <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
@@ -19,65 +19,15 @@
     <div class="box-body">
       <!-- Conversations are loaded here -->
       <div class="direct-chat-messages">
-        <!-- Message. Default to the left -->
-        <div class="direct-chat-msg">
-          <div class="direct-chat-info clearfix">
-            <span class="direct-chat-name pull-left">Alexander Pierce</span>
-            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-          </div>
-          <!-- /.direct-chat-info -->
-          <img class="direct-chat-img" src="~admin-lte/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
-          <div class="direct-chat-text">
-            Is this template really for free? That's unbelievable!
-          </div>
-          <!-- /.direct-chat-text -->
-        </div>
-        <!-- /.direct-chat-msg -->
 
-        <!-- Message to the right -->
-        <div class="direct-chat-msg right">
-          <div class="direct-chat-info clearfix">
-            <span class="direct-chat-name pull-right">Sarah Bullock</span>
-            <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-          </div>
-          <!-- /.direct-chat-info -->
-          <img class="direct-chat-img" src="~admin-lte/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
-          <div class="direct-chat-text">
-            You better believe it!
-          </div>
-          <!-- /.direct-chat-text -->
-        </div>
-        <!-- /.direct-chat-msg -->
-
-        <!-- Message. Default to the left -->
-        <div class="direct-chat-msg">
-          <div class="direct-chat-info clearfix">
-            <span class="direct-chat-name pull-left">Alexander Pierce</span>
-            <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
-          </div>
-          <!-- /.direct-chat-info -->
-          <img class="direct-chat-img" src="~admin-lte/dist/img/user1-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
-          <div class="direct-chat-text">
-            Working with AdminLTE on a great new app! Wanna join?
-          </div>
-          <!-- /.direct-chat-text -->
-        </div>
-        <!-- /.direct-chat-msg -->
-
-        <!-- Message to the right -->
-        <div class="direct-chat-msg right">
-          <div class="direct-chat-info clearfix">
-            <span class="direct-chat-name pull-right">Sarah Bullock</span>
-            <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
-          </div>
-          <!-- /.direct-chat-info -->
-          <img class="direct-chat-img" src="~admin-lte/dist/img/user3-128x128.jpg" alt="message user image"><!-- /.direct-chat-img -->
-          <div class="direct-chat-text">
-            I would love to.
-          </div>
-          <!-- /.direct-chat-text -->
-        </div>
-        <!-- /.direct-chat-msg -->
+        <DirectChatItem
+          v-for="item in talkList"
+          :name="item.name"
+          :date="item.date"
+          :profileImage="item.profileImage"
+          :message="item.message"
+          :isMine="item.isMine"
+        ></DirectChatItem>
 
       </div>
       <!--/.direct-chat-messages-->
@@ -184,7 +134,7 @@
     <div class="box-footer">
       <form action="#" method="post">
         <div class="input-group">
-          <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+          <input type="text" name="message" :placeholder="placeholder" class="form-control">
               <span class="input-group-btn">
                 <button type="button" class="btn btn-warning btn-flat">Send</button>
               </span>
@@ -199,10 +149,76 @@
 </template>
 
 <script>
+import DirectChatItem from './DirectChatItem.vue'
+
 export default {
   name: 'DirectChat',
+  props: {
+    theme: {
+      type: String,
+      default: 'primary'
+    },
+    talkList: {
+      type: Array
+    },
+    contactList: {
+      type: Array
+    },
+    title: {
+      type: String
+    },
+    badgeCount: {
+      type: Number,
+      default: 0
+    },
+    placeholder: {
+      type: String,
+      default: 'Type Message ...'
+    }
+  },
+  computed: {
+    badgeColor () {
+      switch (this.theme) {
+        case 'primary':
+          return 'bg-light-blue'
+        case 'success':
+          return 'bg-green'
+        case 'warning':
+          return 'bg-yellow'
+        case 'danger':
+          return 'bg-red'
+        default:
+          return 'bg-light-blue'
+      }
+    },
+    boxColor () {
+      switch (this.theme) {
+        case 'primary':
+        case 'success':
+        case 'warning':
+        case 'danger':
+          return `box-${this.theme}`
+        default:
+          return 'box-primary'
+      }
+    },
+    directChatColor () {
+      switch (this.theme) {
+        case 'primary':
+        case 'success':
+        case 'warning':
+        case 'danger':
+          return `direct-chat-${this.theme}`
+        default:
+          return 'direct-chat-primary'
+      }
+    }
+  },
   created () {
 
+  },
+  components: {
+    DirectChatItem
   }
 }
 </script>

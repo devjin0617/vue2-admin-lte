@@ -55,13 +55,11 @@ export default {
   },
   computed: {
     btnIcon () {
-      console.log(this.isOpen)
       if (this.widgetType === 'collapse') {
         return this.isOpen ? 'fa fa-minus' : 'fa fa-plus'
       } else if (this.widgetType === 'remove') {
         return 'fa fa-times'
       }
-
       return ''
     }
   },

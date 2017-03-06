@@ -39,7 +39,12 @@
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-6">
-            <DirectChat></DirectChat>
+            <DirectChat
+              theme="primary"
+              :talkList="[]"
+              title="Direct Chat"
+              :badgeCount="3"
+            ></DirectChat>
           </div>
           <div class="col-md-6">
             <UserList></UserList>
