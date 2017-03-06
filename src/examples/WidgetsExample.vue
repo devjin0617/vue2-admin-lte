@@ -126,12 +126,81 @@
         </SmallBox>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-default"
+          title="Expandable"
+          content="The body of the box"
+          :isOpen="false"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-success"
+          title="Expandable"
+          content="The body of the box"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-warning"
+          title="Expandable"
+          content="The body of the box"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-danger"
+          title="Expandable"
+          content="The body of the box"
+          :isLoading="true"
+        ></Box>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-default"
+          :isBorder="true"
+          title="Expandable"
+          content="The body of the box"
+          :isOpen="false"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-success"
+          :isBorder="true"
+          title="Expandable"
+          content="The body of the box"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-warning"
+          :isBorder="true"
+          title="Expandable"
+          content="The body of the box"
+        ></Box>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <Box
+          theme="box-danger"
+          :isBorder="true"
+          title="Expandable"
+          content="The body of the box"
+          :isLoading="true"
+        ></Box>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import InfoBox from '../widgets/InfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
+import Box from '../widgets/Box.vue'
 
 export default {
   name: 'WidgetsExample',
@@ -140,7 +209,8 @@ export default {
   },
   components: {
     InfoBox,
-    SmallBox
+    SmallBox,
+    Box
   }
 }
 </script>
