@@ -45,7 +45,7 @@
         <TodoList></TodoList>
         <QuickMail></QuickMail>
       </section>
-      <section class="col-lg-7 connectedSortable ui-sortable">
+      <section class="col-lg-5 connectedSortable ui-sortable">
         <Calendar></Calendar>
       </section>
     </div>
