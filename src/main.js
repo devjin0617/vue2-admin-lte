@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'jquery-slimscroll'
 import 'jquery-ui/ui/widgets/sortable.js'
+import 'jquery-ui/ui/widgets/datepicker.js'
+import 'jquery-ui/themes/base/datepicker.css'
 
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'

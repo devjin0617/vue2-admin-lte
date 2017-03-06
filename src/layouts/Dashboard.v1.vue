@@ -45,6 +45,9 @@
         <TodoList></TodoList>
         <QuickMail></QuickMail>
       </section>
+      <section class="col-lg-7 connectedSortable ui-sortable">
+        <Calendar></Calendar>
+      </section>
     </div>
   </div>
 </template>
@@ -54,6 +57,7 @@ import SmallBox from '../components/SmallBox.vue'
 import ChatBox from '../components/ChatBox.vue'
 import TodoList from '../components/TodoList.vue'
 import QuickMail from '../components/QuickMail.vue'
+import Calendar from '../components/Calendar.vue'
 
 export default {
   name: 'dashboard',
@@ -66,7 +70,8 @@ export default {
     SmallBox,
     ChatBox,
     TodoList,
-    QuickMail
+    QuickMail,
+    Calendar
   }
 }
 
