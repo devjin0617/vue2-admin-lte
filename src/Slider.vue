@@ -42,6 +42,8 @@
             <router-link tag="li" :to="{ name: 'ChartExample' }"><a href=""><i class="fa fa-circle-o"></i>Chart.js</a></router-link>
             <router-link tag="li" :to="{ name: 'AlertExample' }"><a href=""><i class="fa fa-circle-o"></i>Alert</a></router-link>
             <router-link tag="li" :to="{ name: 'ModalExample' }"><a href=""><i class="fa fa-circle-o"></i>Modal</a></router-link>
+            <router-link tag="li" :to="{ name: 'APIExample' }"><a href=""><i class="fa fa-circle-o"></i>APIExample</a></router-link>
+
           </ul>
         </li>
         <li class="treeview">
