@@ -1,1 +1,5 @@
-console.log('services')
+import products from './products'
+
+export default {
+  products
+}

@@ -9,6 +9,7 @@ import ChartExample from 'examples/ChartExample'
 import AlertExample from 'examples/AlertExample'
 import ModalExample from 'examples/ModalExample'
 import WidgetsExample from 'examples/WidgetsExample'
+import APIExample from 'examples/APIExample'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/examples/widgets',
       name: 'WidgetsExample',
       component: WidgetsExample
+    },
+    {
+      path: '/examples/api-example',
+      name: 'APIExample',
+      component: APIExample
     }
   ],
   linkActiveClass: 'active'
