@@ -78,3 +78,26 @@ export default {
 
 </script>
 ```
+
+## Contributing to Vue2 AdminLTE
+
+The following is a set of guidelines for contributing to `Vue2 AdminLTE`.
+
+### Submitting Issues
+
+You can create an issue [here](https://github.com/devjin0617/vue2-admin-lte/issues).
+
+If you can, please include:
+- The version, name of Browser you are using
+- The operating system you are using
+
+Other things that will help resolve your issue:
+- Screenshots or gif
+- dev tools or an alert
+- Perform a search to see if a similar issue has already been submitted
+
+
+### Submitting Pull Requests
+
+- Include screenshots and animated gif in your pull request whenever possible.
+- Use short, present tense commit messages.
