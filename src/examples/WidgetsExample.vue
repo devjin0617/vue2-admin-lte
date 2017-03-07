@@ -267,6 +267,34 @@
         ></SocialUserV1>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-6">
+        <SocialBox
+          :name="socialBoxList[0].name"
+          :description="socialBoxList[0].description"
+          :profileImage="socialBoxList[0].profileImage"
+          :images="socialBoxList[0].images"
+          :text="socialBoxList[0].text"
+          :buttons="socialBoxList[0].buttons"
+          :likeCount="socialBoxList[0].likeCount"
+          :commentCount="socialBoxList[0].commentCount"
+          :comments="socialBoxList[0].comments"
+        ></SocialBox>
+      </div>
+      <div class="col-md-6">
+        <SocialBox
+            :name="socialBoxList[1].name"
+            :description="socialBoxList[1].description"
+            :profileImage="socialBoxList[1].profileImage"
+            :text="socialBoxList[1].text"
+            :buttons="socialBoxList[1].buttons"
+            :likeCount="socialBoxList[1].likeCount"
+            :commentCount="socialBoxList[1].commentCount"
+            :comments="socialBoxList[1].comments"
+            :attachments="socialBoxList[1].attachments"
+          ></SocialBox>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -277,6 +305,7 @@ import Box from '../widgets/Box.vue'
 import DirectChat from '../widgets/DirectChat.vue'
 import SocialUserV1 from '../widgets/SocialUser.v1.vue'
 import SocialUserV2 from '../widgets/SocialUser.v2.vue'
+import SocialBox from '../widgets/SocialBox.vue'
 
 export default {
   name: 'WidgetsExample',
@@ -395,11 +424,99 @@ export default {
             text: 'PRODUCTS'
           }
         ]
+      ],
+      socialBoxList: [
+        {
+          name: 'Jonathan Burke Jr.',
+          profileImage: '/static/img/user1-128x128.jpg',
+          description: 'Shared publicly - 7:30 PM Today',
+          images: [
+            '/static/img/photo2.png'
+          ],
+          text: 'I took this photo this morning. What do you guys think?',
+          buttons: [
+            {
+              name: 'Share',
+              theme: 'fa fa-share',
+              onClick: this.clickToShare
+            },
+            {
+              name: 'Likes',
+              theme: 'fa fa-thumbs-o-up',
+              onClick: this.clickToLike
+            }
+          ],
+          likeCount: 127,
+          commentCount: 3,
+          comments: [
+            {
+              name: 'Maria Gonzales',
+              profileImage: '/static/img/user3-128x128.jpg',
+              text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+              date: new Date()
+            },
+            {
+              name: 'Luna Stark',
+              profileImage: '/static/img/user4-128x128.jpg',
+              text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+              date: new Date()
+            }
+          ]
+        },
+        {
+          name: 'Jonathan Burke Jr.',
+          profileImage: '/static/img/user1-128x128.jpg',
+          description: 'Shared publicly - 7:30 PM Today',
+          text: 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.',
+          buttons: [
+            {
+              name: 'Share',
+              theme: 'fa fa-share',
+              onClick: this.clickToShare
+            },
+            {
+              name: 'Likes',
+              theme: 'fa fa-thumbs-o-up',
+              onClick: this.clickToLike
+            }
+          ],
+          likeCount: 45,
+          commentCount: 2,
+          comments: [
+            {
+              name: 'Maria Gonzales',
+              profileImage: '/static/img/user3-128x128.jpg',
+              text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+              date: new Date()
+            },
+            {
+              name: 'Nora Havisham',
+              profileImage: '/static/img/user5-128x128.jpg',
+              text: `The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.`,
+              date: new Date()
+            }
+          ],
+          attachments: [
+            {
+              title: 'Lorem ipsum text generator',
+              image: '/static/img/photo1.png',
+              text: 'Description about the attachment can be placed here. Lorem Ipsum is simply dummy text of the printing and typesetting industry...'
+            }
+          ]
+        }
       ]
     }
   },
   created () {
 
+  },
+  methods: {
+    clickToShare () {
+      alert('click to shere')
+    },
+    clickToLike () {
+      alert('click to like')
+    }
   },
   components: {
     InfoBox,
@@ -407,7 +524,8 @@ export default {
     Box,
     DirectChat,
     SocialUserV1,
-    SocialUserV2
+    SocialUserV2,
+    SocialBox
   }
 }
 </script>
