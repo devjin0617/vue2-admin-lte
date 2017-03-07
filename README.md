@@ -6,6 +6,8 @@
 
 # vue2-admin-lte
 
+[![Join the chat at https://gitter.im/devjin0617/vue2-admin-lte](https://badges.gitter.im/devjin0617/vue2-admin-lte.svg)](https://gitter.im/devjin0617/vue2-admin-lte?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > AdminLTE of Admin control panel template Based on Vuejs 2.x Front-end Framework.
 
 ![](https://github.com/devjin0617/vue2-admin-lte/blob/master/capture.png?raw=true)
