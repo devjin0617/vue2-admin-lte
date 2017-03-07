@@ -236,6 +236,37 @@
         ></DirectChat>
       </div>
     </div>
+
+    <!-- TODO: Typography Component 완성 후 교체예정 -->
+    <h2 class="page-header">Social Widgets</h2>
+
+    <div class="row">
+      <div class="col-md-4">
+        <SocialUserV2
+          name="Nadia Carmichael"
+          description="Lead Developer"
+          profileImage="/static/img/user7-128x128.jpg"
+          :list="socialDataList[0]"
+        ></SocialUserV2>
+      </div>
+      <div class="col-md-4">
+        <SocialUserV1
+          name="Alexander Pierce"
+          description="Founder &amp; CEO"
+          profileImage="/static/img/user1-128x128.jpg"
+          :infoList="socialDataList[1]"
+        ></SocialUserV1>
+      </div>
+      <div class="col-md-4">
+        <SocialUserV1
+          name="Elizabeth Pierce"
+          description="Web Designer"
+          profileImage="/static/img/user3-128x128.jpg"
+          :infoList="socialDataList[2]"
+          :isBackgroundImage="true"
+        ></SocialUserV1>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -244,6 +275,8 @@ import InfoBox from '../widgets/InfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
 import Box from '../widgets/Box.vue'
 import DirectChat from '../widgets/DirectChat.vue'
+import SocialUserV1 from '../widgets/SocialUser.v1.vue'
+import SocialUserV2 from '../widgets/SocialUser.v2.vue'
 
 export default {
   name: 'WidgetsExample',
@@ -302,6 +335,66 @@ export default {
           latestMessage: 'Naver mine I found...',
           latestDate: new Date()
         }
+      ],
+      socialDataList: [
+        [
+          {
+            name: 'Projects',
+            badge: {
+              theme: 'bg-blue',
+              count: 31
+            }
+          },
+          {
+            name: 'Tasks',
+            badge: {
+              theme: 'bg-aqua',
+              count: 5
+            }
+          },
+          {
+            name: 'Completed Projects',
+            badge: {
+              theme: 'bg-green',
+              count: 12
+            }
+          },
+          {
+            name: 'Followers',
+            badge: {
+              theme: 'bg-red',
+              count: 842
+            }
+          }
+        ],
+        [
+          {
+            count: 3200,
+            text: 'SALES'
+          },
+          {
+            count: 13000,
+            text: 'FOLLOWERS'
+          },
+          {
+            count: 35,
+            text: 'PRODUCTS'
+          }
+        ],
+        [
+          {
+            count: 3200,
+            text: 'SALES'
+          },
+          {
+            count: 13000,
+            text: 'FOLLOWERS'
+          },
+          {
+            count: 35,
+            text: 'PRODUCTS'
+          }
+        ]
       ]
     }
   },
@@ -312,7 +405,9 @@ export default {
     InfoBox,
     SmallBox,
     Box,
-    DirectChat
+    DirectChat,
+    SocialUserV1,
+    SocialUserV2
   }
 }
 </script>
