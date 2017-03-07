@@ -199,6 +199,7 @@
         <DirectChat
           theme="primary"
           :talkList="talkList"
+          :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
@@ -208,6 +209,7 @@
         <DirectChat
           theme="success"
           :talkList="talkList"
+          :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
@@ -217,6 +219,7 @@
         <DirectChat
           theme="warning"
           :talkList="talkList"
+          :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
@@ -226,6 +229,7 @@
         <DirectChat
           theme="danger"
           :talkList="talkList"
+          :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
@@ -259,6 +263,44 @@ export default {
           profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
           message: `You better believe it!`,
           isMine: true
+        }
+      ],
+      contacts: [
+        {
+          name: 'Count Dracula',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: 'How have you been? I was...',
+          latestDate: new Date()
+        },
+        {
+          name: 'Sarah Doe',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: 'I will be waiting for...',
+          latestDate: new Date()
+        },
+        {
+          name: 'Nadia Jolie',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: `I'll call you back at...`,
+          latestDate: new Date()
+        },
+        {
+          name: 'Nora S. Vans',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: 'Where is your new...',
+          latestDate: new Date()
+        },
+        {
+          name: 'John K.',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: 'Can I take a look at...',
+          latestDate: new Date()
+        },
+        {
+          name: 'Kenneth M.',
+          profileImage: 'http://cfile9.uf.tistory.com/image/25270C4853F7057D09BFD3',
+          latestMessage: 'Naver mine I found...',
+          latestDate: new Date()
         }
       ]
     }

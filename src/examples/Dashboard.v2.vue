@@ -42,6 +42,7 @@
             <DirectChat
               theme="primary"
               :talkList="[]"
+              :contacts="[]"
               title="Direct Chat"
               :badgeCount="3"
             ></DirectChat>
