@@ -2,6 +2,12 @@
 <img src="https://github.com/devjin0617/vue2-admin-lte/blob/master/vue2-admin-lte-logo.png?raw=true">
 <br>
 <img src="https://img.shields.io/badge/AdminLTE-2.3.11-blue.svg"> <img src="https://img.shields.io/badge/jquery-3.1.1-lightgrey.svg"> <img src="https://img.shields.io/badge/bootstrap-3.3.7-blue.svg"> <img src="https://img.shields.io/badge/vue-2.2.1-brightgreen.svg"> <img src="https://img.shields.io/badge/vuex-2.2.1-brightgreen.svg"> <img src="https://img.shields.io/badge/vue--router-2.3.0-green.svg">
+
+<br>
+
+<a href="https://gitter.im/devjin0617/vue2-admin-lte?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
+  <img src="https://badges.gitter.im/devjin0617/vue2-admin-lte.svg">
+</a>
 </p>
 
 # vue2-admin-lte
