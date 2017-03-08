@@ -8,8 +8,8 @@
           <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>{{ USER_NAME }}</p>
-          <a href="#"><i class="fa fa-circle" :style="`color:${STATUS_COLOR}`"></i> {{ STATUS_NAME }}</a>
+          <p>{{ currentUser.name }}</p>
+          <a href="#"><i class="fa fa-circle" :style="`color:${currentUser.state.color}`"></i> {{ currentUser.state.name }}</a>
         </div>
       </div>
       <!-- search form -->
@@ -37,10 +37,13 @@
             <router-link tag="li" :to="{ name: 'Hello'}" exact><a href=""><i class="fa fa-circle-o"></i>헬로화면</a></router-link>
             <router-link tag="li" :to="{ name: 'Sample' }"><a href=""><i class="fa fa-circle-o"></i>샘플화면</a></router-link>
             <router-link tag="li" :to="{ name: 'DashboardV1' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v1</a></router-link>
+            <router-link tag="li" :to="{ name: 'DashboardV2' }"><a href=""><i class="fa fa-circle-o"></i>Dashboard v2</a></router-link>
             <router-link tag="li" :to="{ name: 'InfoBoxExample' }"><a href=""><i class="fa fa-circle-o"></i>InfoBox</a></router-link>
             <router-link tag="li" :to="{ name: 'ChartExample' }"><a href=""><i class="fa fa-circle-o"></i>Chart.js</a></router-link>
             <router-link tag="li" :to="{ name: 'AlertExample' }"><a href=""><i class="fa fa-circle-o"></i>Alert</a></router-link>
             <router-link tag="li" :to="{ name: 'ModalExample' }"><a href=""><i class="fa fa-circle-o"></i>Modal</a></router-link>
+            <router-link tag="li" :to="{ name: 'APIExample' }"><a href=""><i class="fa fa-circle-o"></i>APIExample</a></router-link>
+
           </ul>
         </li>
         <li class="treeview">
@@ -58,14 +61,14 @@
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
-        <li>
+        <router-link tag="li" :to="{ name: 'WidgetsExample' }">
           <a href="pages/widgets.html">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
             </span>
           </a>
-        </li>
+        </router-link>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-pie-chart"></i>
@@ -206,21 +209,17 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'slider',
   created () {
 
   },
   computed: {
-    USER_NAME () {
-      return this.$store.getters.user.name
-    },
-    STATUS_COLOR () {
-      return this.$store.getters.user.state.color
-    },
-    STATUS_NAME () {
-      return this.$store.getters.user.state.name
-    }
+    ...mapGetters([
+      'currentUser'
+    ])
   }
 }
 </script>

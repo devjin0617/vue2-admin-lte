@@ -37,7 +37,7 @@
 </div>
 </template>
 <script>
-import InfoBox from '../components/InfoBox'
+import InfoBox from '../widgets/InfoBox'
 
 export default {
   components: {

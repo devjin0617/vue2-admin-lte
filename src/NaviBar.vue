@@ -21,10 +21,10 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">{{ MESSAGE_BADGE }}</span>
+              <span class="label label-success">{{ unreadMessagesCount }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have {{ MESSAGE_BADGE }} messages</li>
+              <li class="header">You have {{ unreadMessagesCount }} messages</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -98,10 +98,10 @@
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">{{ NOTIFICATION_BADGE }}</span>
+              <span class="label label-warning">{{ unreadNotificationsCount }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have {{ NOTIFICATION_BADGE }} notifications</li>
+              <li class="header">You have {{ unreadNotificationsCount }} notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -140,10 +140,10 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">{{ TASK_BADGE }}</span>
+              <span class="label label-danger">{{ remainTasksCount }}</span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have {{ TASK_BADGE }} tasks</li>
+              <li class="header">You have {{ remainTasksCount }} tasks</li>
               <li>
                 <!-- inner menu: contains the actual data -->
                 <ul class="menu">
@@ -214,7 +214,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="~admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">{{ USER_NAME }}</span>
+              <span class="hidden-xs">{{ currentUser.name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -222,8 +222,8 @@
                 <img src="~admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  {{ USER_NAME }} - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  {{ currentUser.name }} - {{ currentUser.position }}
+                  <small>{{ currentUser.createdAt }}</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -258,30 +258,22 @@
           </li>
         </ul>
       </div>
-
     </nav>
   </header>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'NaviBar',
-  created () {
-  },
   computed: {
-    MESSAGE_BADGE () {
-      return this.$store.getters.badges.messages
-    },
-    NOTIFICATION_BADGE () {
-      return this.$store.getters.badges.notifications
-    },
-    TASK_BADGE () {
-      return this.$store.getters.badges.tasks
-    },
-    USER_NAME () {
-      return this.$store.getters.user.name
-    }
+    ...mapGetters([
+      'unreadMessagesCount',
+      'unreadNotificationsCount',
+      'remainTasksCount',
+      'currentUser'
+    ])
   }
 }
 

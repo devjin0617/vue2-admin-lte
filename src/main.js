@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import 'jquery-slimscroll'
 import 'jquery-ui/ui/widgets/sortable.js'
+import 'jquery-ui/ui/widgets/datepicker.js'
+import 'jquery-ui/themes/base/datepicker.css'
 
 import 'admin-lte'
 import 'admin-lte/dist/css/AdminLTE.min.css'
@@ -16,17 +18,17 @@ import 'font-awesome/css/font-awesome.min.css'
 // import 'bootstrap3-wysihtml5-bower/dist/amd/bootstrap3-wysihtml5.all.js'
 
 import Vue from 'vue'
-import store from './lib/sotre'
 import App from './App'
 import router from './router'
 import EventBus from './lib/eventBus.js'
+import axios from 'axios'
 
 Vue.prototype.$bus = EventBus
+Vue.prototype.$http = axios
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  store,
   router,
   template: '<App/>',
   components: { App }
