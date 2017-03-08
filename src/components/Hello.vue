@@ -1,9 +1,12 @@
 <template>
   <div class="hello">
-    <img src="../assets/logo.png">
-    <button type="button" id="myButton" data-loading-text="jquery with bootstrap" class="btn bg-maroon btn-flat margin" autocomplete="off" @click="clickBtn">
-          button of adminLTE of bootstrap
-    </button>
+    <img class="logo" src="../assets/logo.png">
+    <button
+      id="myButton"
+      class="btn bg-maroon btn-flat margin"
+      @click="clickBtn"
+      :disabled="loading"
+      ><template v-if="loading">{{msgBye}}</template><template v-else>{{msgHello}}</template></button>
   </div>
 </template>
 
@@ -12,15 +15,16 @@ export default {
   name: 'hello',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msgHello: 'Hello',
+      msgBye: 'Bye',
+      loading: false
     }
   },
   methods: {
-    clickBtn (event) {
-      $(event.target).button('loading')
-
-      setTimeout(function () {
-        $(event.target).button('reset')
+    clickBtn () {
+      this.loading = !this.loading
+      setTimeout(() => {
+        this.loading = !this.loading
       }, 1000)
     }
   }
