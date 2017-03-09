@@ -31,10 +31,10 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
-# run unit tests: comping soon
+# run unit tests: coming soon
 # npm run unit
 
-# run e2e tests: comping soon
+# run e2e tests: coming soon
 # npm run e2e
 
 # run all tests: comping soon
@@ -84,6 +84,34 @@ export default {
 
 </script>
 ```
+
+## how to start mock server
+
+```javascript
+node ./mock-server/index.js
+```
+
+## how to use Vuex
+
+```javascript
+// /vuex/store.js
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+import * as actions from './actions'
+import * as getters from './getters'
+import modules from './modules'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  actions,
+  getters,
+  modules,
+  strict: process.env.NODE_ENV !== 'production'
+})
+```
+
 
 ## Contributing to Vue2 AdminLTE
 
