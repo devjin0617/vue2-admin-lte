@@ -10,6 +10,7 @@ import AlertExample from 'examples/AlertExample'
 import ModalExample from 'examples/ModalExample'
 import WidgetsExample from 'examples/WidgetsExample'
 import APIExample from 'examples/APIExample'
+import General from 'pages/ui-elements/General.vue'
 
 Vue.use(Router)
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/examples/api-example',
       name: 'APIExample',
       component: APIExample
+    },
+    {
+      path: '/ui-elements/general',
+      name: 'General',
+      component: General
     }
   ],
   linkActiveClass: 'active'
