@@ -121,7 +121,38 @@
         <!-- /.box -->
       </div>
       <!-- /.col -->
+
     </div>
+
+    <h2 class="page-header">AdminLTE Custom Tabs</h2>
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <CustomTab
+          :list="[]"
+        >
+          <custom-nav>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Dropdown <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+          </custom-nav>
+        </CustomTab>
+
+      </div>
+
+    </div>
+
   </div>
 
 </template>
@@ -130,6 +161,7 @@
 import ColorPaletteSet from '../../components/ColorPaletteSet.vue'
 import Alert from '../../components/Alert.vue'
 import Callout from '../../components/Callout.vue'
+import CustomTab from '../../components/CustomTab.vue'
 
 export default {
   name: 'General',
@@ -147,7 +179,8 @@ export default {
   components: {
     ColorPaletteSet,
     Alert,
-    Callout
+    Callout,
+    CustomTab
   }
 }
 </script>
