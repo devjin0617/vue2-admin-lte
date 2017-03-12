@@ -96,11 +96,21 @@
             <router-link tag="li" :to="{ name: 'General' }">
               <a href=""><i class="fa fa-circle-o"></i> General</a>
             </router-link>
-            <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <router-link tag="li" :to="{ name: 'Icons' }">
+              <a href=""><i class="fa fa-circle-o"></i> Icons</a>
+            </router-link>
+            <router-link tag="li" :to="{ name: 'Buttons' }">
+              <a href=""><i class="fa fa-circle-o"></i> Buttons</a>
+            </router-link>
+            <router-link tag="li" :to="{ name: 'Sliders' }">
+              <a href=""><i class="fa fa-circle-o"></i> Sliders</a>
+            </router-link>
+            <router-link tag="li" :to="{ name: 'Timeline' }">
+              <a href=""><i class="fa fa-circle-o"></i> Timeline</a>
+            </router-link>
+            <router-link tag="li" :to="{ name: 'Modals' }">
+              <a href=""><i class="fa fa-circle-o"></i> Modals</a>
+            </router-link>
           </ul>
         </li>
         <li class="treeview">

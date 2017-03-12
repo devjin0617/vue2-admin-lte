@@ -10,7 +10,14 @@ import AlertExample from 'examples/AlertExample'
 import ModalExample from 'examples/ModalExample'
 import WidgetsExample from 'examples/WidgetsExample'
 import APIExample from 'examples/APIExample'
+
+// UI Element Groups
 import General from 'pages/ui-elements/General.vue'
+import Icons from 'pages/ui-elements/Icons.vue'
+import Buttons from 'pages/ui-elements/Buttons.vue'
+import Sliders from 'pages/ui-elements/Sliders.vue'
+import Timeline from 'pages/ui-elements/Timeline.vue'
+import Modals from 'pages/ui-elements/Modals.vue'
 
 Vue.use(Router)
 
@@ -71,6 +78,31 @@ export default new Router({
       path: '/ui-elements/general',
       name: 'General',
       component: General
+    },
+    {
+      path: '/ui-elements/icons',
+      name: 'Icons',
+      component: Icons
+    },
+    {
+      path: '/ui-elements/buttons',
+      name: 'Buttons',
+      component: Buttons
+    },
+    {
+      path: '/ui-elements/sliders',
+      name: 'Sliders',
+      component: Sliders
+    },
+    {
+      path: '/ui-elements/timeline',
+      name: 'Timeline',
+      component: Timeline
+    },
+    {
+      path: '/ui-elements/modals',
+      name: 'Modals',
+      component: Modals
     }
   ],
   linkActiveClass: 'active'
