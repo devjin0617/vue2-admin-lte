@@ -11,7 +11,7 @@
     </div>
     <!-- /.box-header -->
     <div class="box-body">
-      {{ content }}
+      <slot name="content"></slot>
     </div>
     <!-- /.box-body -->
 

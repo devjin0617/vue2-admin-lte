@@ -131,31 +131,43 @@
         <Box
           theme="box-default"
           title="Expandable"
-          content="The body of the box"
           :isOpen="false"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-success"
           title="Expandable"
-          content="The body of the box"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-warning"
           title="Expandable"
-          content="The body of the box"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-danger"
           title="Expandable"
-          content="The body of the box"
           :isLoading="true"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
     </div>
     <div class="row">
@@ -164,34 +176,46 @@
           theme="box-default"
           :isBorder="true"
           title="Expandable"
-          content="The body of the box"
           :isOpen="false"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-success"
           :isBorder="true"
           title="Expandable"
-          content="The body of the box"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-warning"
           :isBorder="true"
           title="Expandable"
-          content="The body of the box"
-        ></Box>
+        >
+          <div slot="content">
+            The body of the box
+          </div>
+        </Box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <Box
           theme="box-danger"
           :isBorder="true"
           title="Expandable"
-          content="The body of the box"
           :isLoading="true"
-        ></Box>
+        >
+          <div slot="The body of the box">
+            The body of the box
+          </div>
+        </Box>
       </div>
     </div>
     <div class="row">
