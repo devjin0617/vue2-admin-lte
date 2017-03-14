@@ -41,6 +41,58 @@ npm run build --report
 # npm test
 ```
 
+## How to use (coming soon)
+
+First, npm install
+
+```bash
+$ npm i --save vue2-admin-lte
+```
+
+append alias config in webpack
+```javascript
+module.exports = {
+  resolve: {
+    alias: {
+      'va': 'vue2-admin-lte/src'
+    }
+  }
+}
+```
+
+import css and javascript files
+
+```javascript
+// css files
+import 'va/lib/css'
+
+// js files
+import 'va/lib/js'
+```
+
+use the components in .vue
+
+```vue
+<template>
+  <Button
+    name="Primary"
+    theme="primary"
+    size="btn-lg"
+    :isFlat="true"
+  ></Button>
+</template>
+
+<script>
+import Button from 'va/components/Button.vue'
+export default {
+  name: 'Button',
+  components: {
+    Button
+  }
+}
+</script>
+```
+
 ## Example
 
 ```vue
