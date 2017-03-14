@@ -67,7 +67,7 @@ import css and javascript files
 import 'va/lib/css'
 
 // js files
-import 'va/lib/js'
+import 'va/lib/script'
 ```
 
 use the components in .vue
