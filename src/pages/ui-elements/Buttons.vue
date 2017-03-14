@@ -285,7 +285,7 @@
 
 <script>
 import Box from '../../widgets/Box.vue'
-import Button from '../../components/Buttons.vue'
+import Button from '../../components/Button.vue'
 
 export default {
   name: 'Buttons',
