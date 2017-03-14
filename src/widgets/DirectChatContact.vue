@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     parseDate () {
-      // 시간 파싱 개발해야 합니다.
+      // TODO: 시간 파싱 개발해야 합니다.
       return this.latestDate.toDateString()
     }
   },
