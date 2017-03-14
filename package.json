@@ -1,9 +1,8 @@
 {
   "name": "vue2-admin-lte",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "version": "0.1.0",
+  "description": "adminLTE to vuejs v2.x converting project",
   "author": "devjin0617 <devjin0617@gmail.com>",
-  "private": true,
   "scripts": {
     "dev": "./node_modules/.bin/json-server ./mock-server/index.js & node build/dev-server.js",
     "build": "node build/build.js",
