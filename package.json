@@ -1,6 +1,6 @@
 {
   "name": "vue2-admin-lte",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "adminLTE to vuejs v2.x converting project",
   "author": "devjin0617 <devjin0617@gmail.com>",
   "scripts": {
@@ -11,6 +11,26 @@
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjin0617/vue2-admin-lte"
+  },
+  "keywords": [
+    "admin-lte",
+    "vue2-admin-lte",
+    "vue-admin-lte",
+    "vuejs",
+    "vue.js",
+    "jquery",
+    "bootstrap",
+    "vue-jquery",
+    "vue-bootstrap",
+    "front-end"
+  ],
+  "bugs": {
+    "url": "https://github.com/devjin0617/vue2-admin-lte/issues"
+  },
+  "hompage": "https://github.com/devjin0617/vue2-admin-lte#readme",
   "dependencies": {
     "admin-lte": "^2.3.11",
     "axios": "^0.15.3",
