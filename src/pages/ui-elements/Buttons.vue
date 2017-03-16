@@ -4,6 +4,7 @@
       <Box
         theme="box-primary"
         title="Expandable"
+        widgetType=""
       >
         <div slot="content" class="table-responsive">
           <p>Various types of buttons. Using the base class <code>.btn</code></p>
@@ -282,7 +283,10 @@
     </div>
     <div class="col-md-6">
 
-      <Box title="Block Buttons">
+      <Box
+        title="Block Buttons"
+        widgetType=""
+      >
         <div slot="content" class="table-responsive">
           <Button
             name=".btn-block"
@@ -301,6 +305,35 @@
 
 
         </div>
+
+      </Box>
+
+      <Box
+        title="Horizontal Button Group"
+        widgetType=""
+      >
+
+      </Box>
+
+      <Box
+        title="Button Addon"
+        widgetType=""
+      >
+
+      </Box>
+
+      <Box
+        title="Split buttons"
+        widgetType=""
+      >
+
+      </Box>
+
+      <Box
+        title="Social Buttons (By Lipis)"
+        widgetType=""
+      >
+
       </Box>
 
     </div>
