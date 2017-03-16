@@ -280,6 +280,30 @@
         </div>
       </Box>
     </div>
+    <div class="col-md-6">
+
+      <Box title="Block Buttons">
+        <div slot="content" class="table-responsive">
+          <Button
+            name=".btn-block"
+          ></Button>
+
+          <Button
+            name=".btn-block"
+            :isFloat="true"
+          ></Button>
+
+
+          <Button
+            name=".btn-block"
+            size="btn-sm"
+          ></Button>
+
+
+        </div>
+      </Box>
+
+    </div>
   </div>
 </template>
 
