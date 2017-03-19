@@ -1,6 +1,6 @@
 <template>
   <div class="nav-tabs-custom">
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" :class="tabsClass">
       <li v-for="(tab, index) in tabList" :class="tab.class">
         <a :href="tab.id" data-toggle="tab">{{tab.title}}</a>
       </li>
@@ -16,7 +16,10 @@
 export default {
   name: 'CustomTab',
   props: {
-
+    tabsClass: {
+      type: String,
+      default: ''
+    }
   },
   data () {
     return {
