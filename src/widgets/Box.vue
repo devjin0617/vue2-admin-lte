@@ -37,8 +37,7 @@ export default {
       type: String
     },
     theme: {
-      type: String,
-      default: 'box-default'
+      type: String
     },
     isOpen: {
       type: Boolean,
