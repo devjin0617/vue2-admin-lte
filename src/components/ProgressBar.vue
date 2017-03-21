@@ -1,13 +1,13 @@
 <template>
 
-  <div class="progress" :class="[progressSize, isActive?'active':'']">
+  <div class="progress" :class="[progressSize, isVertical?'vertical':'', isActive?'active':'']">
     <div class="progress-bar"
          :class="[`progress-bar-${type}`, (isStriped?'progress-bar-striped':'')]"
          role="progressbar"
          :aria-valuenow="value"
          :aria-valuemin="min"
          :aria-valuemax="max"
-         :style="`width: ${value}%`">
+         :style="`${isVertical?'height':'width'}: ${value}%`">
       <span class="sr-only">{{text}}</span>
     </div>
   </div>
@@ -49,6 +49,10 @@ export default {
     text: {
       type: String,
       default: ''
+    },
+    isVertical: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {

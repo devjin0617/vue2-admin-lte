@@ -360,6 +360,82 @@
 
       </div>
 
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <Box title="Vertical Progress Bars Different Sizes"
+            :isBorder="true"
+            widgetType="">
+          <div slot="content" class="text-center">
+
+            <p>By adding the class <code>.vertical</code> and <code>.progress-sm</code>, <code>.progress-xs</code> or
+              <code>.progress-xxs</code> we achieve:</p>
+
+
+            <ProgressBar
+              type="primary"
+              :max="100"
+              :value="40"
+              :isActive="true"
+              :isVertical="true"
+              text="40%">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="success"
+              size="sm"
+              :max="100"
+              :value="20"
+              :isActive="true"
+              :isVertical="true"
+              text="20%">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="warning"
+              size="xs"
+              :max="100"
+              :value="60"
+              :isActive="true"
+              :isVertical="true"
+              text="60%">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="info"
+              size="xxs"
+              :max="100"
+              :value="60"
+              :isActive="true"
+              :isVertical="true"
+              text="60%">
+            </ProgressBar>
+
+
+
+
+
+          </div>
+        </Box>
+      </div>
+
+      <div class="col-md-6">
+
+        <Box
+          title="Vertical Progress bars"
+          :isBorder="true"
+          widgetType="">
+          <div slot="content">
+          </div>
+        </Box>
+      </div>
+
 
     </div>
 
