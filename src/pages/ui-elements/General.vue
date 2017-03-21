@@ -306,6 +306,61 @@
 
       </div>
 
+
+      <div class="col-md-6">
+
+
+        <Box
+          title="Progress bars"
+          :isBorder="true"
+          widgetType=""
+          >
+          <div slot="content">
+
+
+            <ProgressBar
+              type="green"
+              :isStriped="false"
+              :max="100"
+              :value="40"
+              text="40% Complete (success)">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="aqua"
+              :isStriped="false"
+              :max="100"
+              :value="20"
+              text="20% Complete">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="yellow"
+              :isStriped="false"
+              :max="100"
+              :value="60"
+              text="60% Complete (warning)">
+            </ProgressBar>
+
+
+            <ProgressBar
+              type="red"
+              :isStriped="false"
+              :max="100"
+              :value="80"
+              text="80% Complete">
+            </ProgressBar>
+
+
+          </div>
+        </Box>
+
+
+      </div>
+
+
     </div>
 
   </div>
