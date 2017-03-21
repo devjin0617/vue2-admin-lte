@@ -417,10 +417,6 @@
               text="60%">
             </ProgressBar>
 
-
-
-
-
           </div>
         </Box>
       </div>
@@ -431,7 +427,46 @@
           title="Vertical Progress bars"
           :isBorder="true"
           widgetType="">
-          <div slot="content">
+          <div slot="content" class="text-center">
+
+            <p>By adding the class <code>.vertical</code> we achieve:</p>
+
+            <ProgressBar
+              type="green"
+              :max="100"
+              :value="40"
+              :isStriped="false"
+              :isVertical="true"
+              text="40%">
+            </ProgressBar>
+
+            <ProgressBar
+              type="aqua"
+              :max="100"
+              :value="20"
+              :isStriped="false"
+              :isVertical="true"
+              text="20%">
+            </ProgressBar>
+
+            <ProgressBar
+              type="yellow"
+              :max="100"
+              :value="60"
+              :isStriped="false"
+              :isVertical="true"
+              text="60%">
+            </ProgressBar>
+
+            <ProgressBar
+              type="red"
+              :max="100"
+              :value="60"
+              :isStriped="false"
+              :isVertical="true"
+              text="60%">
+            </ProgressBar>
+
           </div>
         </Box>
       </div>
