@@ -43,7 +43,7 @@ npm run build --report
 # npm test
 ```
 
-## How to use (coming soon)
+## How to use
 
 First, npm install
 
@@ -52,6 +52,7 @@ $ npm i --save vue2-admin-lte
 ```
 
 append alias config in webpack
+
 ```javascript
 module.exports = {
   resolve: {
