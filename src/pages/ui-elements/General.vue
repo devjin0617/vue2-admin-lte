@@ -251,7 +251,7 @@
 
     </div>
 
-    <h2>Progress Bars</h2>
+    <h2 class="page-header">Progress Bars</h2>
 
     <div class="row">
 
@@ -474,7 +474,7 @@
 
     </div>
 
-    <h2>Bootstrap Accordion & Carousel</h2>
+    <h2 class="page-header">Bootstrap Accordion & Carousel</h2>
 
     <div class="row">
       <div class="col-md-6">
@@ -499,6 +499,25 @@
         </Box>
 
       </div>
+
+      <div class="col-md-6">
+        <Box
+          title="Carousel"
+          :isBorder="true"
+          widgetType="">
+
+          <div slot="content">
+
+            <Carousel
+            >
+            </Carousel>
+
+          </div>
+
+        </Box>
+
+      </div>
+
     </div>
 
   </div>
@@ -513,6 +532,7 @@ import CustomTab from '../../components/CustomTab.vue'
 import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
 import Accordion from '../../components/Accordion.vue'
+import Carousel from '../../components/Carousel.vue'
 
 export default {
   name: 'General',
@@ -543,6 +563,23 @@ export default {
             content: `Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.`
           }
         ]
+      },
+      carousel: {
+        name: 'carousel-example',
+        list: [
+          {
+            image: 'http://placehold.it/900x500/39CCCC/ffffff&text=I+Love+Bootstrap',
+            text: 'First Slide'
+          },
+          {
+            image: 'http://placehold.it/900x500/3c8dbc/ffffff&text=I+Love+Bootstrap',
+            text: 'Second Slide'
+          },
+          {
+            image: 'http://placehold.it/900x500/f39c12/ffffff&text=I+Love+Bootstrap',
+            text: 'Third Slide'
+          }
+        ]
       }
     }
   },
@@ -556,7 +593,8 @@ export default {
     CustomTab,
     Box,
     ProgressBar,
-    Accordion
+    Accordion,
+    Carousel
   }
 }
 </script>
