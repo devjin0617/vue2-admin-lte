@@ -6,7 +6,7 @@
 
 
 <br>
-<img src="https://img.shields.io/badge/npm-0.1.6-blue.svg">
+<img src="https://img.shields.io/badge/npm-0.2.0-blue.svg">
 <a href="https://gitter.im/devjin0617/vue2-admin-lte?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" target="_blank">
   <img src="https://badges.gitter.im/devjin0617/vue2-admin-lte.svg">
 </a>
