@@ -509,6 +509,8 @@
           <div slot="content">
 
             <Carousel
+              :name="carousel.name"
+              :list="carousel.list"
             >
             </Carousel>
 
@@ -517,6 +519,81 @@
         </Box>
 
       </div>
+
+    </div>
+
+    <h2 class="page-header">Typography</h2>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <Box
+          title="Headlines"
+          :isBorder="true"
+          widgetType="">
+          <i slot="icon-title" class="fa fa-text-width"></i>
+
+          <div slot="content">
+
+            <h1>h1. Bootstrap heading</h1>
+
+            <h2>h2. Bootstrap heading</h2>
+
+            <h3>h3. Bootstrap heading</h3>
+            <h4>h4. Bootstrap heading</h4>
+            <h5>h5. Bootstrap heading</h5>
+            <h6>h6. Bootstrap heading</h6>
+
+          </div>
+
+
+        </Box>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <Box
+          title="Text Emphasis"
+          :isBorder="true"
+          widgetType="">
+          <i slot="icon-title" class="fa fa-text-width"></i>
+
+          <div slot="content">
+
+            <va-text>
+              Lead to emphasize importance
+            </va-text>
+
+            <va-text type="green">
+              Text green to emphasize success
+            </va-text>
+
+            <va-text type="aqua">
+              Text aqua to emphasize info
+            </va-text>
+
+            <va-text type="light-blue">
+              Text light blue to emphasize info (2)
+            </va-text>
+
+            <va-text type="red">
+              Text red to emphasize danger
+            </va-text>
+
+            <va-text type="yellow">
+              Text yellow to emphasize warning
+            </va-text>
+
+            <va-text type="muted">
+              Text muted to emphasize general
+            </va-text>
+
+          </div>
+        </Box>
+
+      </div>
+
 
     </div>
 
@@ -533,6 +610,7 @@ import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
 import Accordion from '../../components/Accordion.vue'
 import Carousel from '../../components/Carousel.vue'
+import VAText from '../../components/va-text.vue'
 
 export default {
   name: 'General',
@@ -594,7 +672,8 @@ export default {
     Box,
     ProgressBar,
     Accordion,
-    Carousel
+    Carousel,
+    'va-text': VAText
   }
 }
 </script>
