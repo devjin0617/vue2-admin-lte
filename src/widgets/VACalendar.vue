@@ -80,7 +80,7 @@
 <script>
 
 export default {
-  name: 'Calendar',
+  name: 'va-calendar',
   mounted () {
     $(this.$el).find('.id-calendar').datepicker()
   }
