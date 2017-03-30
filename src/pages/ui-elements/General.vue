@@ -508,11 +508,11 @@
 
           <div slot="content">
 
-            <Carousel
+            <va-carousel
               :name="carousel.name"
               :list="carousel.list"
             >
-            </Carousel>
+            </va-carousel>
 
           </div>
 
@@ -812,7 +812,7 @@ import CustomTab from '../../components/CustomTab.vue'
 import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
 import VAAccordion from '../../components/VAAccordion.vue'
-import Carousel from '../../components/Carousel.vue'
+import VACarousel from '../../components/VACarousel.vue'
 import VAText from '../../components/VAText.vue'
 
 export default {
@@ -875,7 +875,7 @@ export default {
     Box,
     ProgressBar,
     'va-accordion': VAAccordion,
-    Carousel,
+    'va-carousel': VACarousel,
     'va-text': VAText
   }
 }
