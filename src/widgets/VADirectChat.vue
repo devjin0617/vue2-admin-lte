@@ -20,14 +20,14 @@
       <!-- Conversations are loaded here -->
       <div class="direct-chat-messages">
 
-        <DirectChatItem
+        <va-direct-chat-item
           v-for="item in talkList"
           :name="item.name"
           :date="item.date"
           :profileImage="item.profileImage"
           :message="item.message"
           :isMine="item.isMine"
-        ></DirectChatItem>
+        ></va-direct-chat-item>
 
       </div>
       <!--/.direct-chat-messages-->
@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import DirectChatItem from './DirectChatItem.vue'
+import VADirectChatItem from './VADirectChatItem.vue'
 import VADirectChatContact from './VADirectChatContact.vue'
 
 export default {
@@ -135,7 +135,7 @@ export default {
 
   },
   components: {
-    DirectChatItem,
+    'va-direct-chat-item': VADirectChatItem,
     'va-direct-chat-contact': VADirectChatContact
   }
 }
