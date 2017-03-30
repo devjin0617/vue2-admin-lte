@@ -1,6 +1,6 @@
 {
   "name": "vue2-admin-lte",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "adminLTE to vuejs v2.x converting project",
   "author": "devjin0617 <devjin0617@gmail.com>",
   "scripts": {
