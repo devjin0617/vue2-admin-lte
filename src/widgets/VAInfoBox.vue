@@ -20,7 +20,7 @@
 <script>
 // TODO: move to CONSTANT
   export default {
-    name: 'InfoBox',
+    name: 'va-info-box',
     props: {
       'wrapBgColor': {
         type: String

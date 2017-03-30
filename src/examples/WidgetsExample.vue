@@ -2,45 +2,45 @@
   <div>
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             bgColor="bg-aqua"
             bgIcon="ion ion-ios-gear-outline"
             text="Messages"
             number="1410"
             numberType="comma"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             bgColor="bg-green"
             bgIcon="fa fa-flag-o"
             text="Bookmarks"
             number="410"
             numberType="comma"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             bgColor="bg-yellow"
             bgIcon="fa fa-files-o"
             text="Uploads"
             number="13648"
             numberType="comma"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             bgColor="bg-red"
             bgIcon="fa fa-star-o"
             text="Likes"
             number="93139"
             numberType="comma"
-          ></InfoBox>
+          ></va-info-box>
       </div>
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             wrapBgColor="bg-aqua"
             bgIcon="fa fa-bookmark-o"
             text="Bookmarks"
@@ -49,10 +49,10 @@
             :isProgress="true"
             :percentage="70"
             progressDescription="70% Increase in 30 Days"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             wrapBgColor="bg-green"
             bgIcon="fa fa-thumbs-o-up"
             text="Likes"
@@ -61,10 +61,10 @@
             :isProgress="true"
             :percentage="70"
             progressDescription="70% Increase in 30 Days"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             wrapBgColor="bg-yellow"
             bgIcon="fa fa-calendar"
             text="Events"
@@ -73,10 +73,10 @@
             :isProgress="true"
             :percentage="70"
             progressDescription="70% Increase in 30 Days"
-          ></InfoBox>
+          ></va-info-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <InfoBox
+        <va-info-box
             wrapBgColor="bg-red"
             bgIcon="fa fa-comments-o"
             text="Comments"
@@ -85,7 +85,7 @@
             :isProgress="true"
             :percentage="70"
             progressDescription="70% Increase in 30 Days"
-          ></InfoBox>
+          ></va-info-box>
       </div>
     </div>
     <div class="row">
@@ -323,7 +323,7 @@
 </template>
 
 <script>
-import InfoBox from '../widgets/InfoBox.vue'
+import VAInfoBox from '../widgets/VAInfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
 import VABox from '../widgets/VABox.vue'
 import DirectChat from '../widgets/DirectChat.vue'
@@ -543,7 +543,7 @@ export default {
     }
   },
   components: {
-    InfoBox,
+    'va-info-box': VAInfoBox,
     SmallBox,
     'va-box': VABox,
     DirectChat,
