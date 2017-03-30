@@ -92,29 +92,29 @@
           <!-- /.box-header -->
           <div class="box-body">
 
-            <Callout
+            <va-callout
               type="danger"
               title="I am a danger callout!"
               text="There is a problem that we need to fix. A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
-            ></Callout>
+            ></va-callout>
 
-            <Callout
+            <va-callout
               type="info"
               title="I am an info callout!"
               text="Follow the steps to continue to payment."
-            ></Callout>
+            ></va-callout>
 
-            <Callout
+            <va-callout
               type="warning"
               title="I am a warning callout!"
               text="This is a yellow callout."
-            ></Callout>
+            ></va-callout>
 
-            <Callout
+            <va-callout
               type="success"
               title="I am a success callout!"
               text="This is a green callout."
-            ></Callout>
+            ></va-callout>
 
           </div>
           <!-- /.box-body -->
@@ -807,7 +807,7 @@
 <script>
 import ColorPaletteSet from '../../components/ColorPaletteSet.vue'
 import VAAlert from '../../components/VAAlert.vue'
-import Callout from '../../components/Callout.vue'
+import VACallout from '../../components/VACallout.vue'
 import CustomTab from '../../components/CustomTab.vue'
 import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
@@ -870,7 +870,7 @@ export default {
   components: {
     ColorPaletteSet,
     'va-alert': VAAlert,
-    Callout,
+    'va-callout': VACallout,
     CustomTab,
     Box,
     ProgressBar,

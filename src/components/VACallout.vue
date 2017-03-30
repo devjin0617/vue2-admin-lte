@@ -9,7 +9,7 @@
 <script>
 const CalloutTypes = ['success', 'info', 'warning', 'danger']
 export default {
-  name: 'Callout',
+  name: 'va-callout',
   props: {
     type: {
       default: 'success',
