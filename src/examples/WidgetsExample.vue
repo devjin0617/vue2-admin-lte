@@ -293,7 +293,7 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <SocialBox
+        <va-social-box
           :name="socialBoxList[0].name"
           :description="socialBoxList[0].description"
           :profileImage="socialBoxList[0].profileImage"
@@ -303,10 +303,10 @@
           :likeCount="socialBoxList[0].likeCount"
           :commentCount="socialBoxList[0].commentCount"
           :comments="socialBoxList[0].comments"
-        ></SocialBox>
+        ></va-social-box>
       </div>
       <div class="col-md-6">
-        <SocialBox
+        <va-social-box
             :name="socialBoxList[1].name"
             :description="socialBoxList[1].description"
             :profileImage="socialBoxList[1].profileImage"
@@ -316,7 +316,7 @@
             :commentCount="socialBoxList[1].commentCount"
             :comments="socialBoxList[1].comments"
             :attachments="socialBoxList[1].attachments"
-          ></SocialBox>
+          ></va-social-box>
       </div>
     </div>
   </div>
@@ -329,7 +329,7 @@ import VABox from '../widgets/VABox.vue'
 import VADirectChat from '../widgets/VADirectChat.vue'
 import SocialUserV1 from '../widgets/SocialUser.v1.vue'
 import SocialUserV2 from '../widgets/SocialUser.v2.vue'
-import SocialBox from '../widgets/SocialBox.vue'
+import VASocialBox from '../widgets/VASocialBox.vue'
 
 export default {
   name: 'WidgetsExample',
@@ -549,7 +549,7 @@ export default {
     'va-direct-chat': VADirectChat,
     SocialUserV1,
     SocialUserV2,
-    SocialBox
+    'va-social-box': VASocialBox
   }
 }
 </script>
