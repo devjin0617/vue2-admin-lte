@@ -77,20 +77,20 @@ use the components in .vue
 
 ```vue
 <template>
-  <Button
+  <va-button
     name="Primary"
     theme="primary"
     size="btn-lg"
     :isFlat="true"
-  ></Button>
+  ></va-button>
 </template>
 
 <script>
-import Button from 'va/components/Button.vue'
+import VAButton from 'va/components/VAButton.vue'
 export default {
   name: 'Button',
   components: {
-    Button
+    'va-button': VAButton
   }
 }
 </script>

@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: 'va-button',
   props: {
     name: {
       type: String,

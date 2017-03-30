@@ -8,7 +8,7 @@
 <script>
 const AlertTypes = ['success', 'info', 'warning', 'danger']
 export default {
-  name: 'Alert',
+  name: 'va-alert',
   props: {
     type: {
       default: 'success',

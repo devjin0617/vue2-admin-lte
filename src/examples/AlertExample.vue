@@ -5,7 +5,7 @@
         <h2>Normal Alerts</h2>
       </div>
       <div class="box-body">
-        <alert>
+        <va-alert>
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -15,9 +15,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="success">
+        <va-alert type="success">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -27,9 +27,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="info">
+        <va-alert type="info">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -39,9 +39,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="warning">
+        <va-alert type="warning">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -51,9 +51,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="danger">
+        <va-alert type="danger">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -63,7 +63,7 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
       </div>
     </div>
 
@@ -139,11 +139,11 @@
   </div>
 </template>
 <script>
-import Alert from '../components/Alert'
+import VAAlert from '../components/VAAlert.vue'
 
 export default {
   components: {
-    Alert
+    'va-alert': VAAlert
   }
 }
 </script>

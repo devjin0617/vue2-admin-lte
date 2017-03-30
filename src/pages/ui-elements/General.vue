@@ -33,7 +33,7 @@
           <!-- /.box-header -->
           <div class="box-body">
 
-            <Alert
+            <va-alert
               type="danger"
               :dismissible="true">
               <div slot="header">
@@ -43,8 +43,8 @@
                 Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
                 soul, like these sweet mornings of spring which I enjoy with my whole heart.
               </div>
-            </Alert>
-            <Alert
+            </va-alert>
+            <va-alert
               type="info"
               :dismissible="true">
               <div slot="header">
@@ -53,8 +53,8 @@
               <div slot="body">
                 Info alert preview. This alert is dismissable.
               </div>
-            </Alert>
-            <Alert
+            </va-alert>
+            <va-alert
               type="warning"
               :dismissible="true">
               <div slot="header">
@@ -63,8 +63,8 @@
               <div slot="body">
                 Warning alert preview. This alert is dismissable.
               </div>
-            </Alert>
-            <Alert
+            </va-alert>
+            <va-alert
               type="success"
               :dismissible="true">
               <div slot="header">
@@ -73,7 +73,7 @@
               <div slot="body">
                 Success alert preview. This alert is dismissable.
               </div>
-            </Alert>
+            </va-alert>
 
           </div>
           <!-- /.box-body -->
@@ -487,11 +487,11 @@
 
           <div slot="content" class="text-center">
 
-            <Accordion
+            <va-accordion
               :list="accordion.list"
             >
 
-            </Accordion>
+            </va-accordion>
 
 
           </div>
@@ -806,12 +806,12 @@
 
 <script>
 import ColorPaletteSet from '../../components/ColorPaletteSet.vue'
-import Alert from '../../components/Alert.vue'
+import VAAlert from '../../components/VAAlert.vue'
 import Callout from '../../components/Callout.vue'
 import CustomTab from '../../components/CustomTab.vue'
 import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
-import Accordion from '../../components/Accordion.vue'
+import VAAccordion from '../../components/VAAccordion.vue'
 import Carousel from '../../components/Carousel.vue'
 import VAText from '../../components/VAText.vue'
 
@@ -869,12 +869,12 @@ export default {
   },
   components: {
     ColorPaletteSet,
-    Alert,
+    'va-alert': VAAlert,
     Callout,
     CustomTab,
     Box,
     ProgressBar,
-    Accordion,
+    'va-accordion': VAAccordion,
     Carousel,
     'va-text': VAText
   }

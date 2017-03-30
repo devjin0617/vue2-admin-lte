@@ -20,260 +20,260 @@
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Default"
                     theme="default"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Primary"
                     theme="primary"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Success"
                     theme="success"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Info"
                     theme="info"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Danger"
                     theme="danger"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
                     size="btn-lg"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
                     size="btn-sm"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
                     size="btn-xs"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
                     :isFlat="true"
-                  ></Button>
+                  ></va-button>
                 </td>
                 <td>
-                  <Button
+                  <va-button
                     name="Warning"
                     theme="warning"
                     :isDisabled="true"
-                  ></Button>
+                  ></va-button>
                 </td>
               </tr>
             </tbody>
@@ -288,20 +288,20 @@
         widgetType=""
       >
         <div slot="content" class="table-responsive">
-          <Button
+          <va-button
             name=".btn-block"
-          ></Button>
+          ></va-button>
 
-          <Button
+          <va-button
             name=".btn-block"
             :isFloat="true"
-          ></Button>
+          ></va-button>
 
 
-          <Button
+          <va-button
             name=".btn-block"
             size="btn-sm"
-          ></Button>
+          ></va-button>
 
 
         </div>
@@ -342,7 +342,7 @@
 
 <script>
 import Box from '../../widgets/Box.vue'
-import Button from '../../components/Button.vue'
+import VAButton from '../../components/VAButton.vue'
 
 export default {
   name: 'Buttons',
@@ -351,7 +351,7 @@ export default {
   },
   components: {
     Box,
-    Button
+    'va-button': VAButton
   }
 }
 </script>
