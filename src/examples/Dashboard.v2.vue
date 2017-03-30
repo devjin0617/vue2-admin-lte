@@ -48,7 +48,7 @@
             ></va-direct-chat>
           </div>
           <div class="col-md-6">
-            <UserList></UserList>
+            <va-user-list></va-user-list>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
 <script>
 import VAInfoBox from '../widgets/VAInfoBox.vue'
 import VADirectChat from '../widgets/VADirectChat.vue'
-import UserList from '../widgets/UserList.vue'
+import VAUserList from '../widgets/VAUserList.vue'
 
 export default {
   name: 'DashboardV2',
@@ -113,7 +113,7 @@ export default {
   components: {
     'va-info-box': VAInfoBox,
     'va-direct-chat': VADirectChat,
-    UserList
+    'va-user-list': VAUserList
   }
 }
 </script>
