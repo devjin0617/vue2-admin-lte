@@ -220,44 +220,44 @@
     </div>
     <div class="row">
       <div class="col-md-3 col-sm6 col-xs-12">
-        <DirectChat
+        <va-direct-chat
           theme="primary"
           :talkList="talkList"
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
-        ></DirectChat>
+        ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
-        <DirectChat
+        <va-direct-chat
           theme="success"
           :talkList="talkList"
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
-        ></DirectChat>
+        ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
-        <DirectChat
+        <va-direct-chat
           theme="warning"
           :talkList="talkList"
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
-        ></DirectChat>
+        ></va-direct-chat>
       </div>
       <div class="col-md-3 col-sm6 col-xs-12">
-        <DirectChat
+        <va-direct-chat
           theme="danger"
           :talkList="talkList"
           :contacts="contacts"
           title="Direct Chat"
           :badgeCount="3"
           placeholder="내용을 입력하세요..."
-        ></DirectChat>
+        ></va-direct-chat>
       </div>
     </div>
 
@@ -326,7 +326,7 @@
 import VAInfoBox from '../widgets/VAInfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
 import VABox from '../widgets/VABox.vue'
-import DirectChat from '../widgets/DirectChat.vue'
+import VADirectChat from '../widgets/VADirectChat.vue'
 import SocialUserV1 from '../widgets/SocialUser.v1.vue'
 import SocialUserV2 from '../widgets/SocialUser.v2.vue'
 import SocialBox from '../widgets/SocialBox.vue'
@@ -546,7 +546,7 @@ export default {
     'va-info-box': VAInfoBox,
     SmallBox,
     'va-box': VABox,
-    DirectChat,
+    'va-direct-chat': VADirectChat,
     SocialUserV1,
     SocialUserV2,
     SocialBox

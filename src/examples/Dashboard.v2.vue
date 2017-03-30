@@ -39,13 +39,13 @@
       <div class="col-md-8">
         <div class="row">
           <div class="col-md-6">
-            <DirectChat
+            <va-direct-chat
               theme="primary"
               :talkList="[]"
               :contacts="[]"
               title="Direct Chat"
               :badgeCount="3"
-            ></DirectChat>
+            ></va-direct-chat>
           </div>
           <div class="col-md-6">
             <UserList></UserList>
@@ -102,7 +102,7 @@
 
 <script>
 import VAInfoBox from '../widgets/VAInfoBox.vue'
-import DirectChat from '../widgets/DirectChat.vue'
+import VADirectChat from '../widgets/VADirectChat.vue'
 import UserList from '../widgets/UserList.vue'
 
 export default {
@@ -112,7 +112,7 @@ export default {
   },
   components: {
     'va-info-box': VAInfoBox,
-    DirectChat,
+    'va-direct-chat': VADirectChat,
     UserList
   }
 }
