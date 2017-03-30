@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'SocialUserV2',
+  name: 'va-social-user-v2',
   props: {
     name: {
       type: String

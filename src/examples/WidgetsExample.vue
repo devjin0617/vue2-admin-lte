@@ -266,12 +266,12 @@
 
     <div class="row">
       <div class="col-md-4">
-        <SocialUserV2
+        <va-social-user-v2
           name="Nadia Carmichael"
           description="Lead Developer"
           profileImage="/static/img/user7-128x128.jpg"
           :list="socialDataList[0]"
-        ></SocialUserV2>
+        ></va-social-user-v2>
       </div>
       <div class="col-md-4">
         <va-social-user-v1
@@ -328,7 +328,7 @@ import VASmallBox from '../widgets/VASmallBox.vue'
 import VABox from '../widgets/VABox.vue'
 import VADirectChat from '../widgets/VADirectChat.vue'
 import VASocialUserV1 from '../widgets/VASocialUser.v1.vue'
-import SocialUserV2 from '../widgets/SocialUser.v2.vue'
+import VASocialUserV2 from '../widgets/VASocialUser.v2.vue'
 import VASocialBox from '../widgets/VASocialBox.vue'
 
 export default {
@@ -548,7 +548,7 @@ export default {
     'va-box': VABox,
     'va-direct-chat': VADirectChat,
     'va-social-user-v1': VASocialUserV1,
-    SocialUserV2,
+    'va-social-user-v2': VASocialUserV2,
     'va-social-box': VASocialBox
   }
 }
