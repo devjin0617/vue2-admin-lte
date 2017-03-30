@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'CustomTab',
+  name: 'va-custom-tab',
   props: {
     tabsClass: {
       type: String,

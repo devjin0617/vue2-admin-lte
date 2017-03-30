@@ -129,7 +129,7 @@
     <div class="row">
       <div class="col-md-6">
 
-        <CustomTab>
+        <va-custom-tab>
 
           <li slot="nav"
               class="dropdown">
@@ -183,14 +183,14 @@
           </div>
           <!-- /.tab-pane -->
 
-        </CustomTab>
+        </va-custom-tab>
 
       </div>
 
 
       <div class="col-md-6">
 
-        <CustomTab
+        <va-custom-tab
           tabsClass="pull-right"
         >
 
@@ -245,7 +245,7 @@
           </div>
           <!-- /.tab-pane -->
 
-        </CustomTab>
+        </va-custom-tab>
 
       </div>
 
@@ -808,7 +808,7 @@
 import VAColorPaletteSet from '../../components/VAColorPaletteSet.vue'
 import VAAlert from '../../components/VAAlert.vue'
 import VACallout from '../../components/VACallout.vue'
-import CustomTab from '../../components/CustomTab.vue'
+import VACustomTab from '../../components/VACustomTab.vue'
 import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
 import VAAccordion from '../../components/VAAccordion.vue'
@@ -871,7 +871,7 @@ export default {
     'va-color-palette-set': VAColorPaletteSet,
     'va-alert': VAAlert,
     'va-callout': VACallout,
-    CustomTab,
+    'va-custom-tab': VACustomTab,
     Box,
     ProgressBar,
     'va-accordion': VAAccordion,
