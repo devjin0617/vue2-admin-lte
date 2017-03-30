@@ -41,7 +41,7 @@
 
     <div class="row">
       <section class="col-lg-7 connectedSortable ui-sortable">
-        <ChatBox></ChatBox>
+        <va-chat-box></va-chat-box>
         <TodoList></TodoList>
         <QuickMail></QuickMail>
       </section>
@@ -54,7 +54,7 @@
 
 <script>
 import SmallBox from '../widgets/SmallBox.vue'
-import ChatBox from '../widgets/ChatBox.vue'
+import VAChatBox from '../widgets/VAChatBox.vue'
 import TodoList from '../widgets/TodoList.vue'
 import QuickMail from '../widgets/QuickMail.vue'
 import VACalendar from '../widgets/VACalendar.vue'
@@ -68,7 +68,7 @@ export default {
   },
   components: {
     SmallBox,
-    ChatBox,
+    'va-chat-box': VAChatBox,
     TodoList,
     QuickMail,
     'va-calendar': VACalendar
