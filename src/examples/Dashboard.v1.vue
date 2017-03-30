@@ -2,40 +2,40 @@
   <div class="dashboard">
     <div class="row">
       <div class="col-lg-3 col-xs-6">
-        <SmallBox
+        <va-small-box
           color="aqua"
           icon="ion-bag"
           title="150"
           description="New Order"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-lg-3 col-xs-6">
-        <SmallBox
+        <va-small-box
           color="green"
           icon="ion-stats-bars"
           title="53%"
           description="Bounce Rate"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-lg-3 col-xs-6">
-        <SmallBox
+        <va-small-box
           color="yellow"
           icon="ion-person-add"
           title="44"
           description="User Registrations"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-lg-3 col-xs-6">
-        <SmallBox
+        <va-small-box
           color="red"
           icon="ion-pie-graph"
           title="65"
           description="Unique Visitors"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
     </div>
 
@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import SmallBox from '../widgets/SmallBox.vue'
+import VASmallBox from '../widgets/VASmallBox.vue'
 import VAChatBox from '../widgets/VAChatBox.vue'
 import TodoList from '../widgets/TodoList.vue'
 import VAQuickMail from '../widgets/VAQuickMail.vue'
@@ -67,7 +67,7 @@ export default {
     }
   },
   components: {
-    SmallBox,
+    'va-small-box': VASmallBox,
     'va-chat-box': VAChatBox,
     TodoList,
     'va-quick-mail': VAQuickMail,

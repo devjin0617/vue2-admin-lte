@@ -90,40 +90,40 @@
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <SmallBox
+        <va-small-box
           color="aqua"
           icon="ion-bag"
           title="150"
           description="New Order"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <SmallBox
+        <va-small-box
           color="green"
           icon="ion-stats-bars"
           title="53%"
           description="Bounce Rate"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <SmallBox
+        <va-small-box
           color="yellow"
           icon="ion-person-add"
           title="44"
           description="User Registrations"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <SmallBox
+        <va-small-box
           color="red"
           icon="ion-pie-graph"
           title="65"
           description="Unique Visitors"
           moreText="More info">
-        </SmallBox>
+        </va-small-box>
       </div>
     </div>
     <div class="row">
@@ -324,7 +324,7 @@
 
 <script>
 import VAInfoBox from '../widgets/VAInfoBox.vue'
-import SmallBox from '../widgets/SmallBox.vue'
+import VASmallBox from '../widgets/VASmallBox.vue'
 import VABox from '../widgets/VABox.vue'
 import VADirectChat from '../widgets/VADirectChat.vue'
 import SocialUserV1 from '../widgets/SocialUser.v1.vue'
@@ -544,7 +544,7 @@ export default {
   },
   components: {
     'va-info-box': VAInfoBox,
-    SmallBox,
+    'va-small-box': VASmallBox,
     'va-box': VABox,
     'va-direct-chat': VADirectChat,
     SocialUserV1,
