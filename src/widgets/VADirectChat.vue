@@ -35,12 +35,12 @@
       <!-- Contacts are loaded here -->
       <div class="direct-chat-contacts">
         <ul class="contacts-list">
-          <DirectChatContact v-for="contact in contacts"
+          <va-direct-chat-contact v-for="contact in contacts"
             :name="contact.name"
             :profileImage="contact.profileImage"
             :latestDate="contact.latestDate"
             :latestMessage="contact.latestMessage"
-          ></DirectChatContact>
+          ></va-direct-chat-contact>
         </ul>
         <!-- /.contatcts-list -->
       </div>
@@ -66,10 +66,10 @@
 
 <script>
 import DirectChatItem from './DirectChatItem.vue'
-import DirectChatContact from './DirectChatContact.vue'
+import VADirectChatContact from './VADirectChatContact.vue'
 
 export default {
-  name: 'DirectChat',
+  name: 'va-direct-chat',
   props: {
     theme: {
       type: String,
@@ -136,7 +136,7 @@ export default {
   },
   components: {
     DirectChatItem,
-    DirectChatContact
+    'va-direct-chat-contact': VADirectChatContact
   }
 }
 </script>
