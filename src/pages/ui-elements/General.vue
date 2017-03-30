@@ -813,7 +813,7 @@ import Box from '../../widgets/Box.vue'
 import ProgressBar from '../../components/ProgressBar.vue'
 import Accordion from '../../components/Accordion.vue'
 import Carousel from '../../components/Carousel.vue'
-import VAText from '../../components/va-text.vue'
+import VAText from '../../components/VAText.vue'
 
 export default {
   name: 'General',
