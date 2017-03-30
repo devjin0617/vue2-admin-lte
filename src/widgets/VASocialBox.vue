@@ -45,12 +45,12 @@
       </div>
       <!-- /.box-body -->
       <div class="box-footer box-comments">
-        <SocialBoxComment v-for="comment in comments"
+        <va-social-box-comment v-for="comment in comments"
           :name="comment.name"
           :profileImage="comment.profileImage"
           :text="comment.text"
           :date="comment.date"
-        ></SocialBoxComment>
+        ></va-social-box-comment>
       </div>
       <!-- /.box-footer -->
       <div class="box-footer">
@@ -68,10 +68,10 @@
 </template>
 
 <script>
-import SocialBoxComment from './SocialBoxComment.vue'
+import VASocialBoxComment from './VASocialBoxComment.vue'
 
 export default {
-  name: 'SocialBox',
+  name: 'va-social-box',
   props: {
     profileImage: {
       type: String
@@ -116,7 +116,7 @@ export default {
 
   },
   components: {
-    SocialBoxComment
+    'va-social-box-comment': VASocialBoxComment
   }
 }
 
