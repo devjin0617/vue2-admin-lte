@@ -42,7 +42,7 @@
     <div class="row">
       <section class="col-lg-7 connectedSortable ui-sortable">
         <va-chat-box></va-chat-box>
-        <TodoList></TodoList>
+        <va-todo-list></va-todo-list>
         <va-quick-mail></va-quick-mail>
       </section>
       <section class="col-lg-5 connectedSortable ui-sortable">
@@ -55,7 +55,7 @@
 <script>
 import VASmallBox from '../widgets/VASmallBox.vue'
 import VAChatBox from '../widgets/VAChatBox.vue'
-import TodoList from '../widgets/TodoList.vue'
+import VATodoList from '../widgets/VATodoList.vue'
 import VAQuickMail from '../widgets/VAQuickMail.vue'
 import VACalendar from '../widgets/VACalendar.vue'
 
@@ -69,7 +69,7 @@ export default {
   components: {
     'va-small-box': VASmallBox,
     'va-chat-box': VAChatBox,
-    TodoList,
+    'va-todo-list': VATodoList,
     'va-quick-mail': VAQuickMail,
     'va-calendar': VACalendar
   }
