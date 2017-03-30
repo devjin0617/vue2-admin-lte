@@ -6,15 +6,15 @@
       </div>
       <div class="box-body">
         <div class="row">
-          <ColorPaletteSet v-for="color in colors[0]"
+          <va-color-palette-set v-for="color in colors[0]"
             :color="color"
-          ></ColorPaletteSet>
+          ></va-color-palette-set>
         </div>
         <!-- /.row -->
         <div class="row">
-          <ColorPaletteSet v-for="color in colors[1]"
+          <va-color-palette-set v-for="color in colors[1]"
             :color="color"
-          ></ColorPaletteSet>
+          ></va-color-palette-set>
         </div>
         <!-- /.row -->
       </div>
@@ -805,7 +805,7 @@
 </template>
 
 <script>
-import ColorPaletteSet from '../../components/ColorPaletteSet.vue'
+import VAColorPaletteSet from '../../components/VAColorPaletteSet.vue'
 import VAAlert from '../../components/VAAlert.vue'
 import VACallout from '../../components/VACallout.vue'
 import CustomTab from '../../components/CustomTab.vue'
@@ -868,7 +868,7 @@ export default {
 
   },
   components: {
-    ColorPaletteSet,
+    'va-color-palette-set': VAColorPaletteSet,
     'va-alert': VAAlert,
     'va-callout': VACallout,
     CustomTab,
