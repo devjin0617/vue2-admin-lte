@@ -265,41 +265,41 @@
           <div slot="content">
 
             <p><code>.progress</code></p>
-            <ProgressBar
+            <va-progress-bar
               type="primary"
               :max="100"
               :value="40"
               text="40% Complete (success)"
             >
-            </ProgressBar>
+            </va-progress-bar>
 
             <p>Class: <code>.sm</code></p>
-            <ProgressBar
+            <va-progress-bar
               type="success"
               size="sm"
               :max="100"
               :value="20"
               :isActive="true"
               text="20% Complete">
-            </ProgressBar>
+            </va-progress-bar>
 
             <p>Class: <code>.xs</code></p>
-            <ProgressBar
+            <va-progress-bar
               type="warning"
               size="xs"
               :max="100"
               :value="60"
               text="60% Complete (warning)">
-            </ProgressBar>
+            </va-progress-bar>
 
             <p>Class: <code>.xxs</code></p>
-            <ProgressBar
+            <va-progress-bar
               type="danger"
               size="xxs"
               :max="100"
               :value="60"
               text="60% Complete (danger)">
-            </ProgressBar>
+            </va-progress-bar>
 
           </div>
         </Box>
@@ -318,40 +318,40 @@
           <div slot="content">
 
 
-            <ProgressBar
+            <va-progress-bar
               type="green"
               :isStriped="false"
               :max="100"
               :value="40"
               text="40% Complete (success)">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="aqua"
               :isStriped="false"
               :max="100"
               :value="20"
               text="20% Complete">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="yellow"
               :isStriped="false"
               :max="100"
               :value="60"
               text="60% Complete (warning)">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="red"
               :isStriped="false"
               :max="100"
               :value="80"
               text="80% Complete">
-            </ProgressBar>
+            </va-progress-bar>
 
 
           </div>
@@ -375,17 +375,17 @@
               <code>.progress-xxs</code> we achieve:</p>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="primary"
               :max="100"
               :value="40"
               :isActive="true"
               :isVertical="true"
               text="40%">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="success"
               size="sm"
               :max="100"
@@ -393,10 +393,10 @@
               :isActive="true"
               :isVertical="true"
               text="20%">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="warning"
               size="xs"
               :max="100"
@@ -404,10 +404,10 @@
               :isActive="true"
               :isVertical="true"
               text="60%">
-            </ProgressBar>
+            </va-progress-bar>
 
 
-            <ProgressBar
+            <va-progress-bar
               type="info"
               size="xxs"
               :max="100"
@@ -415,7 +415,7 @@
               :isActive="true"
               :isVertical="true"
               text="60%">
-            </ProgressBar>
+            </va-progress-bar>
 
           </div>
         </Box>
@@ -431,41 +431,41 @@
 
             <p>By adding the class <code>.vertical</code> we achieve:</p>
 
-            <ProgressBar
+            <va-progress-bar
               type="green"
               :max="100"
               :value="40"
               :isStriped="false"
               :isVertical="true"
               text="40%">
-            </ProgressBar>
+            </va-progress-bar>
 
-            <ProgressBar
+            <va-progress-bar
               type="aqua"
               :max="100"
               :value="20"
               :isStriped="false"
               :isVertical="true"
               text="20%">
-            </ProgressBar>
+            </va-progress-bar>
 
-            <ProgressBar
+            <va-progress-bar
               type="yellow"
               :max="100"
               :value="60"
               :isStriped="false"
               :isVertical="true"
               text="60%">
-            </ProgressBar>
+            </va-progress-bar>
 
-            <ProgressBar
+            <va-progress-bar
               type="red"
               :max="100"
               :value="60"
               :isStriped="false"
               :isVertical="true"
               text="60%">
-            </ProgressBar>
+            </va-progress-bar>
 
           </div>
         </Box>
@@ -810,7 +810,7 @@ import VAAlert from '../../components/VAAlert.vue'
 import VACallout from '../../components/VACallout.vue'
 import VACustomTab from '../../components/VACustomTab.vue'
 import Box from '../../widgets/Box.vue'
-import ProgressBar from '../../components/ProgressBar.vue'
+import VAProgressBar from '../../components/VAProgressBar.vue'
 import VAAccordion from '../../components/VAAccordion.vue'
 import VACarousel from '../../components/VACarousel.vue'
 import VAText from '../../components/VAText.vue'
@@ -873,7 +873,7 @@ export default {
     'va-callout': VACallout,
     'va-custom-tab': VACustomTab,
     Box,
-    ProgressBar,
+    'va-progress-bar': VAProgressBar,
     'va-accordion': VAAccordion,
     'va-carousel': VACarousel,
     'va-text': VAText
