@@ -7,26 +7,26 @@
             <p class='text-center'>
               <strong>Web Traffic Overview</strong>
             </p>
-            <chart
-              :chart-config='chartConfig'></chart>
+            <va-chart
+              :chart-config='chartConfig'></va-chart>
           </div>
           <div class='col-md-4'>
             <p class='text-center'>
               <strong>Test Line Chart</strong>
             </p>
-            <chart
+            <va-chart
               :chart-config='lineChartConfig'
             >
-            </chart>
+            </va-chart>
           </div>
           <div class='col-md-4'>
             <p class='text-center'>
               <strong>Test Bar Chart</strong>
             </p>
-            <chart
+            <va-chart
               :chart-config='barChartConfig'
             >
-            </chart>
+            </va-chart>
           </div>
         </div>
       </div>
@@ -38,28 +38,28 @@
             <p class='text-center'>
               <strong>Test Radar Chart</strong>
             </p>
-            <chart
+            <va-chart
               :chart-config='radarChartConfig'
             >
-            </chart>
+            </va-chart>
           </div>
           <div class='col-md-4'>
             <p class='text-center'>
               <strong>Test Polar Area Chart</strong>
             </p>
-            <chart
+            <va-chart
               :chart-config='polarAreaChartConfig'
             >
-            </chart>
+            </va-chart>
           </div>
           <div class='col-md-4'>
             <p class='text-center'>
               <strong>Test Doughnut Chart</strong>
             </p>
-            <chart
+            <va-chart
               :chart-config='doughnutChartConfig'
             >
-            </chart>
+            </va-chart>
           </div>
         </div>
       </div>
@@ -70,10 +70,10 @@
               <p class='text-center'>
                 <strong>Test Bubble Chart</strong>
               </p>
-              <chart
+              <va-chart
                 :chart-config='bubbleChartConfig'
               >
-              </chart>
+              </va-chart>
             </div>
           </div>
         </div>
@@ -83,11 +83,11 @@
 </template>
 
 <script>
-import Chart from '../components/Chart'
+import VAChart from '../components/VAChart'
 
 export default {
   components: {
-    Chart
+    'va-chart': VAChart
   },
   data () {
     return {
