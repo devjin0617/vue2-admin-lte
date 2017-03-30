@@ -25,7 +25,7 @@
 
 <script>
 export default {
-  name: 'Box',
+  name: 'va-box',
   props: {
     widgetType: {
       type: String,

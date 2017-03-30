@@ -128,7 +128,7 @@
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-default"
           title="Expandable"
           :isOpen="false"
@@ -136,30 +136,30 @@
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-success"
           title="Expandable"
         >
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-warning"
           title="Expandable"
         >
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-danger"
           title="Expandable"
           :isLoading="true"
@@ -167,12 +167,12 @@
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
     </div>
     <div class="row">
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-default"
           :isBorder="true"
           title="Expandable"
@@ -181,10 +181,10 @@
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-success"
           :isBorder="true"
           title="Expandable"
@@ -192,10 +192,10 @@
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-warning"
           :isBorder="true"
           title="Expandable"
@@ -203,10 +203,10 @@
           <div slot="content">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
       <div class="col-md-3 col-sm-6 col-xs-12">
-        <Box
+        <va-box
           theme="box-danger"
           :isBorder="true"
           title="Expandable"
@@ -215,7 +215,7 @@
           <div slot="The body of the box">
             The body of the box
           </div>
-        </Box>
+        </va-box>
       </div>
     </div>
     <div class="row">
@@ -325,7 +325,7 @@
 <script>
 import InfoBox from '../widgets/InfoBox.vue'
 import SmallBox from '../widgets/SmallBox.vue'
-import Box from '../widgets/Box.vue'
+import VABox from '../widgets/VABox.vue'
 import DirectChat from '../widgets/DirectChat.vue'
 import SocialUserV1 from '../widgets/SocialUser.v1.vue'
 import SocialUserV2 from '../widgets/SocialUser.v2.vue'
@@ -545,7 +545,7 @@ export default {
   components: {
     InfoBox,
     SmallBox,
-    Box,
+    'va-box': VABox,
     DirectChat,
     SocialUserV1,
     SocialUserV2,

@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-12">
-      <Box
+      <va-box
         theme="box-primary"
         title="Expandable"
         widgetType=""
@@ -279,11 +279,11 @@
             </tbody>
           </table>
         </div>
-      </Box>
+      </va-box>
     </div>
     <div class="col-md-6">
 
-      <Box
+      <va-box
         title="Block Buttons"
         widgetType=""
       >
@@ -306,42 +306,42 @@
 
         </div>
 
-      </Box>
+      </va-box>
 
-      <Box
+      <va-box
         title="Horizontal Button Group"
         widgetType=""
       >
 
-      </Box>
+      </va-box>
 
-      <Box
+      <va-box
         title="Button Addon"
         widgetType=""
       >
 
-      </Box>
+      </va-box>
 
-      <Box
+      <va-box
         title="Split buttons"
         widgetType=""
       >
 
-      </Box>
+      </va-box>
 
-      <Box
+      <va-box
         title="Social Buttons (By Lipis)"
         widgetType=""
       >
 
-      </Box>
+      </va-box>
 
     </div>
   </div>
 </template>
 
 <script>
-import Box from '../../widgets/Box.vue'
+import VABox from '../../widgets/VABox.vue'
 import VAButton from '../../components/VAButton.vue'
 
 export default {
@@ -350,7 +350,7 @@ export default {
 
   },
   components: {
-    Box,
+    'va-box': VABox,
     'va-button': VAButton
   }
 }

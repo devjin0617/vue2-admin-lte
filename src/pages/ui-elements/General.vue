@@ -257,7 +257,7 @@
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Progress Bars Different Sizes"
           :isBorder="true"
           widgetType=""
@@ -302,7 +302,7 @@
             </va-progress-bar>
 
           </div>
-        </Box>
+        </va-box>
 
       </div>
 
@@ -310,7 +310,7 @@
       <div class="col-md-6">
 
 
-        <Box
+        <va-box
           title="Progress bars"
           :isBorder="true"
           widgetType=""
@@ -355,7 +355,7 @@
 
 
           </div>
-        </Box>
+        </va-box>
 
 
       </div>
@@ -366,7 +366,7 @@
 
       <div class="col-md-6">
 
-        <Box title="Vertical Progress Bars Different Sizes"
+        <va-box title="Vertical Progress Bars Different Sizes"
             :isBorder="true"
             widgetType="">
           <div slot="content" class="text-center">
@@ -418,12 +418,12 @@
             </va-progress-bar>
 
           </div>
-        </Box>
+        </va-box>
       </div>
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Vertical Progress bars"
           :isBorder="true"
           widgetType="">
@@ -468,7 +468,7 @@
             </va-progress-bar>
 
           </div>
-        </Box>
+        </va-box>
       </div>
 
 
@@ -480,7 +480,7 @@
       <div class="col-md-6">
 
 
-        <Box
+        <va-box
           title="Collapsible Accordion"
           :isBorder="true"
           widgetType="">
@@ -496,12 +496,12 @@
 
           </div>
 
-        </Box>
+        </va-box>
 
       </div>
 
       <div class="col-md-6">
-        <Box
+        <va-box
           title="Carousel"
           :isBorder="true"
           widgetType="">
@@ -516,7 +516,7 @@
 
           </div>
 
-        </Box>
+        </va-box>
 
       </div>
 
@@ -527,7 +527,7 @@
     <div class="row">
 
       <div class="col-md-6">
-        <Box
+        <va-box
           title="Headlines"
           :isBorder="true"
           widgetType="">
@@ -547,13 +547,13 @@
           </div>
 
 
-        </Box>
+        </va-box>
 
       </div>
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Text Emphasis"
           :isBorder="true"
           widgetType="">
@@ -590,7 +590,7 @@
             </va-text>
 
           </div>
-        </Box>
+        </va-box>
 
 
 
@@ -602,7 +602,7 @@
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Block Quotes"
           :isBorder="true"
           widgetType="">
@@ -616,13 +616,13 @@
               </blockquote>
 
           </div>
-        </Box>
+        </va-box>
 
       </div>
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Block Quotes Pulled Right"
           :isBorder="true"
           widgetType="">
@@ -636,7 +636,7 @@
               </blockquote>
 
           </div>
-        </Box>
+        </va-box>
 
       </div>
 
@@ -646,7 +646,7 @@
 
       <div class="col-md-4">
 
-        <Box
+        <va-box
           title="Unordered Lists"
           :isBorder="true"
           widgetType="">
@@ -673,12 +673,12 @@
             </ul>
 
           </div>
-        </Box>
+        </va-box>
       </div>
 
       <div class="col-md-4">
 
-        <Box
+        <va-box
           title="Ordered Lists"
           :isBorder="true"
           widgetType="">
@@ -705,12 +705,12 @@
             </ol>
 
           </div>
-        </Box>
+        </va-box>
       </div>
 
       <div class="col-md-4">
 
-        <Box
+        <va-box
           title="Unstyled Lists"
           :isBorder="true"
           widgetType="">
@@ -737,7 +737,7 @@
             </ul>
 
           </div>
-        </Box>
+        </va-box>
       </div>
     </div>
 
@@ -745,7 +745,7 @@
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Description"
           :isBorder="true"
           widgetType="">
@@ -765,13 +765,13 @@
 
           </div>
 
-        </Box>
+        </va-box>
       </div>
 
 
       <div class="col-md-6">
 
-        <Box
+        <va-box
           title="Description Horizontal"
           :isBorder="true"
           widgetType="">
@@ -795,7 +795,7 @@
 
           </div>
 
-        </Box>
+        </va-box>
       </div>
 
     </div>
@@ -809,7 +809,7 @@ import VAColorPaletteSet from '../../components/VAColorPaletteSet.vue'
 import VAAlert from '../../components/VAAlert.vue'
 import VACallout from '../../components/VACallout.vue'
 import VACustomTab from '../../components/VACustomTab.vue'
-import Box from '../../widgets/Box.vue'
+import VABox from '../../widgets/VABox.vue'
 import VAProgressBar from '../../components/VAProgressBar.vue'
 import VAAccordion from '../../components/VAAccordion.vue'
 import VACarousel from '../../components/VACarousel.vue'
@@ -872,7 +872,7 @@ export default {
     'va-alert': VAAlert,
     'va-callout': VACallout,
     'va-custom-tab': VACustomTab,
-    Box,
+    'va-box': VABox,
     'va-progress-bar': VAProgressBar,
     'va-accordion': VAAccordion,
     'va-carousel': VACarousel,
