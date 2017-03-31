@@ -101,18 +101,19 @@ export default {
 ```vue
 <template>
 
-  <DirectChat
+  <va-direct-chat
     :talkList="talkList"
     :badgeCount="3"
     theme="primary"
     title="Direct Chat"
     placeholder="Type Messages ..."
-  ></DirectChat>
+  ></va-direct-chat>
 
 </template>
 
 
 <script>
+import VADirectChat from '../path/to/components/VADirectChat.vue'
 
 export default {
   name: 'App',
@@ -134,6 +135,9 @@ export default {
           isMine: true
         }
     }
+  },
+  components: {
+    'va-direct-chat': VADirectChat
   }
 }
 
