@@ -18,14 +18,17 @@
 
 ![](https://github.com/devjin0617/vue2-admin-lte/blob/master/capture.png?raw=true)
 
-## Build Setup
+## Demo Build Setup
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8080 (mac or linux)
 npm run dev
+
+# serve with hot reload at localhost:8080 (only windows)
+node build/dev-server.js
 
 # build for production with minification
 npm run build
