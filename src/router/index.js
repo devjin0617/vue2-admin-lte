@@ -19,6 +19,9 @@ import Sliders from 'pages/ui-elements/Sliders.vue'
 import Timeline from 'pages/ui-elements/Timeline.vue'
 import Modals from 'pages/ui-elements/Modals.vue'
 
+// forms
+import GeneralElements from 'pages/forms/GeneralElements.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -103,6 +106,11 @@ export default new Router({
       path: '/ui-elements/modals',
       name: 'Modals',
       component: Modals
+    },
+    {
+      path: '/forms/general-elements',
+      name: 'GeneralElements',
+      component: GeneralElements
     }
   ],
   linkActiveClass: 'active'
