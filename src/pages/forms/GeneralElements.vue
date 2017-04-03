@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <row>
     <div class="col-md-6">
 
       <va-box
@@ -67,7 +67,7 @@
       </va-box>
 
     </div>
-  </div>
+  </row>
 </template>
 
 <script>

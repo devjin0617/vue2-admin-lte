@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <div class="row">
+    <row>
       <div class="col-lg-3 col-xs-6">
         <va-small-box
           color="aqua"
@@ -37,9 +37,9 @@
           moreText="More info">
         </va-small-box>
       </div>
-    </div>
+    </row>
 
-    <div class="row">
+    <row>
       <section class="col-lg-7 connectedSortable ui-sortable">
         <va-chat-box></va-chat-box>
         <va-todo-list></va-todo-list>
@@ -48,7 +48,7 @@
       <section class="col-lg-5 connectedSortable ui-sortable">
         <va-calendar></va-calendar>
       </section>
-    </div>
+    </row>
   </div>
 </template>
 

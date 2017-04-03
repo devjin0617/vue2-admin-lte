@@ -10,7 +10,7 @@
       <img class="img-circle" :src="profileImage" alt="User Avatar">
     </div>
     <div class="box-footer">
-      <div class="row">
+      <row>
         <div class="col-sm-4 border-right">
           <div class="description-block">
             <h5 class="description-header">{{ infoList[0].count }}</h5>
@@ -35,7 +35,7 @@
           <!-- /.description-block -->
         </div>
         <!-- /.col -->
-      </div>
+      </row>
       <!-- /.row -->
     </div>
   </div>
@@ -43,7 +43,7 @@
 
 <script>
 export default {
-  name: 'SocialUserV1',
+  name: 'va-social-user-v1',
   props: {
     theme: {
       type: String,

@@ -65,7 +65,7 @@
       </div>
       <div class="box">
         <div class="box-body">
-          <div class="row">
+          <row>
             <div class='col-md-4'>
               <p class='text-center'>
                 <strong>Test Bubble Chart</strong>
@@ -75,7 +75,7 @@
               >
               </va-chart>
             </div>
-          </div>
+          </row>
         </div>
       </div>
     </div>

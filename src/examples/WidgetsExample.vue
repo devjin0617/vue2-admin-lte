@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-info-box
             bgColor="bg-aqua"
@@ -37,8 +37,8 @@
             numberType="comma"
           ></va-info-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-info-box
             wrapBgColor="bg-aqua"
@@ -87,8 +87,8 @@
             progressDescription="70% Increase in 30 Days"
           ></va-info-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-small-box
           color="aqua"
@@ -125,8 +125,8 @@
           moreText="More info">
         </va-small-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-default"
@@ -169,8 +169,8 @@
           </div>
         </va-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-default"
@@ -217,8 +217,8 @@
           </div>
         </va-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-3 col-sm6 col-xs-12">
         <va-direct-chat
           theme="primary"
@@ -259,12 +259,12 @@
           placeholder="내용을 입력하세요..."
         ></va-direct-chat>
       </div>
-    </div>
+    </row>
 
     <!-- TODO: Typography Component 완성 후 교체예정 -->
     <h2 class="page-header">Social Widgets</h2>
 
-    <div class="row">
+    <row>
       <div class="col-md-4">
         <va-social-user-v2
           name="Nadia Carmichael"
@@ -290,8 +290,8 @@
           :isBackgroundImage="true"
         ></va-social-user-v1>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-6">
         <va-social-box
           :name="socialBoxList[0].name"
@@ -318,7 +318,7 @@
             :attachments="socialBoxList[1].attachments"
           ></va-social-box>
       </div>
-    </div>
+    </row>
   </div>
 </template>
 

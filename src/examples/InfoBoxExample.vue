@@ -1,5 +1,5 @@
 <template>
-<div class="row">
+<row>
   <div class='col-md-3'>
     <va-info-box
       bgColor='bg-aqua'
@@ -34,7 +34,7 @@
       number-type='comma'
     ></va-info-box>
   </div>
-</div>
+</row>
 </template>
 <script>
 import VAInfoBox from '../widgets/VAInfoBox'

@@ -5,24 +5,24 @@
         <h3 class="box-title"><i class="fa fa-tag"></i> Color Palette</h3>
       </div>
       <div class="box-body">
-        <div class="row">
+        <row>
           <va-color-palette-set v-for="color in colors[0]"
             :color="color"
           ></va-color-palette-set>
-        </div>
+        </row>
         <!-- /.row -->
-        <div class="row">
+        <row>
           <va-color-palette-set v-for="color in colors[1]"
             :color="color"
           ></va-color-palette-set>
-        </div>
+        </row>
         <!-- /.row -->
       </div>
     </div>
 
     <h2 class="page-header">Alerts and Callouts</h2>
 
-    <div class="row">
+    <row>
       <div class="col-md-6">
         <div class="box box-default">
           <div class="box-header with-border">
@@ -122,11 +122,11 @@
         <!-- /.box -->
       </div>
       <!-- /.col -->
-    </div>
+    </row>
 
     <h2 class="page-header">AdminLTE Custom Tabs</h2>
 
-    <div class="row">
+    <row>
       <div class="col-md-6">
 
         <va-custom-tab>
@@ -249,11 +249,11 @@
 
       </div>
 
-    </div>
+    </row>
 
     <h2 class="page-header">Progress Bars</h2>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-6">
 
@@ -360,9 +360,9 @@
 
       </div>
 
-    </div>
+    </row>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-6">
 
@@ -472,11 +472,11 @@
       </div>
 
 
-    </div>
+    </row>
 
     <h2 class="page-header">Bootstrap Accordion & Carousel</h2>
 
-    <div class="row">
+    <row>
       <div class="col-md-6">
 
 
@@ -520,11 +520,11 @@
 
       </div>
 
-    </div>
+    </row>
 
     <h2 class="page-header">Typography</h2>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-6">
         <va-box
@@ -596,9 +596,9 @@
 
       </div>
 
-    </div>
+    </row>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-6">
 
@@ -640,9 +640,9 @@
 
       </div>
 
-    </div>
+    </row>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-4">
 
@@ -739,9 +739,9 @@
           </div>
         </va-box>
       </div>
-    </div>
+    </row>
 
-    <div class="row">
+    <row>
 
       <div class="col-md-6">
 
@@ -798,7 +798,7 @@
         </va-box>
       </div>
 
-    </div>
+    </row>
 
   </div>
 

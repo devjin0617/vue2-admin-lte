@@ -1,14 +1,14 @@
 <template lang="html">
   <div class="container">
     <h1>Modal Example</h1>
-    <div class="row">
+    <row>
       <div class="col-md-12">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary btn-lg" @click="openModal">
           Launch demo modal
         </button>
       </div>
-    </div>
+    </row>
   </div>
 </template>
 

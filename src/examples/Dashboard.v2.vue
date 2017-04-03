@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <div class="row">
+    <row>
       <div class="col-lg-3 col-xs-6">
         <va-info-box
           bgColor="bg-aqua"
@@ -34,10 +34,10 @@
           number="2,000"
         ></va-info-box>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-8">
-        <div class="row">
+        <row>
           <div class="col-md-6">
             <va-direct-chat
               theme="primary"
@@ -50,10 +50,10 @@
           <div class="col-md-6">
             <va-user-list></va-user-list>
           </div>
-        </div>
+        </row>
       </div>
-    </div>
-    <div class="row">
+    </row>
+    <row>
       <div class="col-md-4">
         <va-info-box
           wrapBgColor="bg-yellow"
@@ -96,7 +96,7 @@
           :percentage="40"
         ></va-info-box>
       </div>
-    </div>
+    </row>
   </div>
 </template>
 

@@ -32,7 +32,7 @@
     </div>
     <!-- /.box-body -->
     <div class="box-footer text-black">
-      <div class="row">
+      <row>
         <div class="col-sm-6">
           <!-- Progress bars -->
           <div class="clearfix">
@@ -70,7 +70,7 @@
           </div>
         </div>
         <!-- /.col -->
-      </div>
+      </row>
       <!-- /.row -->
     </div>
   </div>

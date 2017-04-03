@@ -1,7 +1,7 @@
 <template>
   <!-- Info boxes -->
   <section class="content">
-    <div class="row">
+    <row>
       <div class="col-md-3 col-sm-6 col-xs-12">
         <div class="info-box">
           <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
@@ -58,10 +58,10 @@
         <!-- /.info-box -->
       </div>
       <!-- /.col -->
-    </div>
+    </row>
     <!-- /.row -->
 
-    <div class="row">
+    <row>
       <div class="col-md-12">
         <div class="box">
           <div class="box-header with-border">
@@ -86,7 +86,7 @@
           </div>
           <!-- /.box-header -->
           <div class="box-body">
-            <div class="row">
+            <row>
               <div class="col-md-8">
                 <p class="text-center">
                   <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
@@ -142,12 +142,12 @@
                 <!-- /.progress-group -->
               </div>
               <!-- /.col -->
-            </div>
+            </row>
             <!-- /.row -->
           </div>
           <!-- ./box-body -->
           <div class="box-footer">
-            <div class="row">
+            <row>
               <div class="col-sm-3 col-xs-6">
                 <div class="description-block border-right">
                   <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
@@ -183,7 +183,7 @@
                 </div>
                 <!-- /.description-block -->
               </div>
-            </div>
+            </row>
             <!-- /.row -->
           </div>
           <!-- /.box-footer -->
@@ -191,11 +191,11 @@
         <!-- /.box -->
       </div>
       <!-- /.col -->
-    </div>
+    </row>
     <!-- /.row -->
 
     <!-- Main row -->
-    <div class="row">
+    <row>
       <!-- Left col -->
       <div class="col-md-8">
         <!-- MAP & BOX PANE -->
@@ -211,7 +211,7 @@
           </div>
           <!-- /.box-header -->
           <div class="box-body no-padding">
-            <div class="row">
+            <row>
               <div class="col-md-9 col-sm-8">
                 <div class="pad">
                   <!-- Map will be created here -->
@@ -242,13 +242,13 @@
                 </div>
               </div>
               <!-- /.col -->
-            </div>
+            </row>
             <!-- /.row -->
           </div>
           <!-- /.box-body -->
         </div>
         <!-- /.box -->
-        <div class="row">
+        <row>
           <div class="col-md-6">
             <!-- DIRECT CHAT -->
             <div class="box box-warning direct-chat direct-chat-warning">
@@ -516,7 +516,7 @@
             <!--/.box -->
           </div>
           <!-- /.col -->
-        </div>
+        </row>
         <!-- /.row -->
 
         <!-- TABLE: LATEST ORDERS -->
@@ -698,7 +698,7 @@
           </div>
           <!-- /.box-header -->
           <div class="box-body">
-            <div class="row">
+            <row>
               <div class="col-md-8">
                 <div class="chart-responsive">
                   <canvas id="pieChart" height="150"></canvas>
@@ -717,7 +717,7 @@
                 </ul>
               </div>
               <!-- /.col -->
-            </div>
+            </row>
             <!-- /.row -->
           </div>
           <!-- /.box-body -->
@@ -811,7 +811,7 @@
         <!-- /.box -->
       </div>
       <!-- /.col -->
-    </div>
+    </row>
     <!-- /.row -->
   </section>
 </template>
