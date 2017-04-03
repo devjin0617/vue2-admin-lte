@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'Arccordion',
+  name: 'va-arccordion',
   props: {
     list: {
       type: Array,

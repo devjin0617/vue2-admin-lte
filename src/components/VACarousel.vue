@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'Carousel',
+  name: 'va-carousel',
   props: {
     name: {
       type: String,
