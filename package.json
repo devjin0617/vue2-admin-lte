@@ -4,7 +4,9 @@
   "description": "adminLTE to vuejs v2.x converting project",
   "author": "devjin0617 <devjin0617@gmail.com>",
   "scripts": {
-    "dev": "./node_modules/.bin/json-server ./mock-server/index.js & node build/dev-server.js",
+    "mock": "./node_modules/.bin/json-server ./mock-server/index.js",
+    "dev-server": "node build/dev-server.js",
+    "dev": "npm-run-all --parallel mock dev-server",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
@@ -94,6 +96,7 @@
     "lolex": "^1.5.2",
     "mocha": "^3.2.0",
     "nightwatch": "^0.9.12",
+    "npm-run-all": "^4.0.2",
     "opn": "^4.0.2",
     "ora": "^1.1.0",
     "phantomjs-prebuilt": "^2.1.14",
