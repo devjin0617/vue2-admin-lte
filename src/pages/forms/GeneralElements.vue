@@ -1,6 +1,6 @@
 <template>
   <row>
-    <div class="col-md-6">
+    <column class="col-md-6">
 
       <va-box
           title="Quick Example"
@@ -66,7 +66,7 @@
           </div>
       </va-box>
 
-    </div>
+    </column>
   </row>
 </template>
 
