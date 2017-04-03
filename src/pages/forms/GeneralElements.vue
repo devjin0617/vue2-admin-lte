@@ -41,6 +41,31 @@
           </div>
       </va-box>
 
+      <va-box
+          title="Different Height"
+          theme="box-success"
+          widgetType="">
+
+          <div slot="content">
+
+            <va-input
+              size="lg"
+              placeholder=".input-lg"
+            ></va-input>
+            <br/>
+            <va-input
+              placeholder="Default input"
+            ></va-input>
+            <br/>
+            <va-input
+              size="sm"
+              placeholder=".input-sm"
+            ></va-input>
+
+
+          </div>
+      </va-box>
+
     </div>
   </div>
 </template>
@@ -49,6 +74,7 @@
 import VABox from '../../widgets/VABox'
 import VAForm from '../../components/VAForm'
 import VACheckBox from '../../components/VACheckBox'
+import VAInput from '../../components/VAInput'
 
 export default {
   name: 'general-elements',
@@ -58,7 +84,8 @@ export default {
   components: {
     'va-box': VABox,
     'va-form': VAForm,
-    'va-checkbox': VACheckBox
+    'va-checkbox': VACheckBox,
+    'va-input': VAInput
   }
 }
 </script>
