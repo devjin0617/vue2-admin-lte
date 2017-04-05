@@ -24,11 +24,8 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080 (mac or linux)
+# serve with hot reload at localhost:8080
 npm run dev
-
-# serve with hot reload at localhost:8080 (only windows)
-node build/dev-server.js
 
 # build for production with minification
 npm run build
