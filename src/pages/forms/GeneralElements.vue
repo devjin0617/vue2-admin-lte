@@ -66,6 +66,29 @@
           </div>
       </va-box>
 
+      <va-box
+          title="Different Width"
+          theme="box-danger"
+          widgetType="">
+
+          <div slot="content">
+
+            <column class="col-xs-3">
+              <va-input placeholder=".col-xs-3"></va-input>
+            </column>
+
+            <column class="col-xs-4">
+              <va-input placeholder=".col-xs-4"></va-input>
+            </column>
+
+            <column class="col-xs-5">
+              <va-input placeholder=".col-xs-5"></va-input>
+            </column>
+
+          </div>
+
+      </va-box>
+
     </column>
   </row>
 </template>
