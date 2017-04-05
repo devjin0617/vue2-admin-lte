@@ -9,29 +9,29 @@
 
           <div slot="content">
 
-            <va-form
+            <va-input-group
               title="Email address"
               vaId="exampleInputEmail1"
               type="email"
               placeholder="Enter email"
             >
-            </va-form>
+            </va-input-group>
 
-            <va-form
+            <va-input-group
               title="Password"
               vaId="exampleInputPassword1"
               type="password"
               placeholder="Password"
             >
-            </va-form>
+            </va-input-group>
 
-            <va-form
+            <va-input-group
               title="File input"
               vaId="exampleInputFile"
               type="file"
               helpBlock="Example block-level help text here."
             >
-            </va-form>
+            </va-input-group>
 
             <va-checkbox
               text="Check me out..."
@@ -89,15 +89,147 @@
 
       </va-box>
 
+      <va-box
+        title="Input Addon"
+        theme="box-info"
+        widgetType="">
+
+          <div slot="content">
+
+            <va-input-group
+              groupType="input"
+              placeholder="Username"
+              prefixAddonText="@"
+            >
+            </va-input-group>
+            <br/>
+            <va-input-group
+              groupType="input"
+              suffixAddonText=".00"
+            >
+            </va-input-group>
+            <br/>
+            <va-input-group
+              groupType="input"
+              prefixAddonText="$"
+              suffixAddonText=".00"
+            >
+            </va-input-group>
+
+            <h4>With icons</h4>
+
+            <va-input-group
+              groupType="input"
+              placeholder="Email"
+              type="email"
+            >
+              <i slot="slotPrefixAddonText" class="fa fa-envelope"></i>
+            </va-input-group>
+            <br/>
+
+            <va-input-group
+              groupType="input"
+            >
+              <i slot="slotSuffixAddonText" class="fa fa-check"></i>
+            </va-input-group>
+            <br/>
+
+            <va-input-group
+              groupType="input"
+            >
+              <i slot="slotPrefixAddonText" class="fa fa-dollar"></i>
+              <i slot="slotSuffixAddonText" class="fa fa-ambulance"></i>
+            </va-input-group>
+
+
+            <h4>With checkbox and radio inputs</h4>
+
+            <row>
+              <column class="col-lg-6">
+                <va-input-group
+                  groupType="input"
+                >
+                  <input slot="slotPrefixAddonText" type="checkbox">
+                </va-input-group>
+              </column>
+
+              <column class="col-lg-6">
+                <va-input-group
+                  groupType="input"
+                >
+                  <input slot="slotPrefixAddonText" type="radio">
+                </va-input-group>
+              </column>
+            </row>
+
+            <h4>With buttons</h4>
+
+            <p class="margin">Large: <code>.input-group.input-group-lg</code></p>
+
+            <va-input-group
+              groupType="input"
+              class="input-group-lg"
+            >
+
+              <va-button slot="slotPrefixButton"
+                name="Action"
+                theme="warning"
+                class="dropdown-toggle"
+                data-toggle="dropdown">
+                <slot>
+                   <span class="fa fa-caret-down"></span>
+                </slot>
+              </va-button>
+              <ul slot="slotPrefixDropdown" class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+
+            </va-input-group>
+
+            <p class="margin">Normal</p>
+
+            <va-input-group
+              groupType="input"
+              placeholer=""
+            >
+              <va-button slot="slotPrefixButton"
+                name="Action"
+                theme="danger">
+              </va-button>
+
+            </va-input-group>
+
+            <p class="margin">Small <code>.input-group.input-group-sm</code></p>
+
+            <va-input-group
+              groupType="input"
+              placeholer=""
+            >
+              <va-button slot="slotSuffixButton"
+                name="Go!"
+                theme="info">
+              </va-button>
+
+            </va-input-group>
+
+          </div>
+
+      </va-box>
+
     </column>
   </row>
 </template>
 
 <script>
 import VABox from '../../widgets/VABox'
-import VAForm from '../../components/VAForm'
+import VAInputGroup from '../../components/VAInputGroup'
 import VACheckBox from '../../components/VACheckBox'
 import VAInput from '../../components/VAInput'
+import VAButton from '../../components/VAButton'
 
 export default {
   name: 'general-elements',
@@ -106,9 +238,10 @@ export default {
   },
   components: {
     'va-box': VABox,
-    'va-form': VAForm,
+    'va-input-group': VAInputGroup,
     'va-checkbox': VACheckBox,
-    'va-input': VAInput
+    'va-input': VAInput,
+    'va-button': VAButton
   }
 }
 </script>

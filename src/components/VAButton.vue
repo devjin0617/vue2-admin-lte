@@ -1,7 +1,10 @@
 <template>
   <button type="button" class="btn btn-block"
     :class="[btnTheme, disabled, flat, size]"
-  >{{name}}</button>
+  >
+    {{name}}
+    <slot></slot>
+  </button>
 </template>
 
 <script>
