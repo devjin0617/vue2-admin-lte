@@ -381,6 +381,38 @@
 
           </va-form-group>
 
+          <va-form-group>
+            <label>Select</label>
+            <va-select
+              :list="selectList"
+            ></va-select>
+          </va-form-group>
+
+          <va-form-group>
+            <label>Select Disabled</label>
+            <va-select
+              :list="selectList"
+              :isDisabled="true"
+            ></va-select>
+          </va-form-group>
+
+          <va-form-group>
+            <label>Select Multiple</label>
+            <va-select
+              :list="selectList"
+              :isMultiple="true"
+            ></va-select>
+          </va-form-group>
+
+          <va-form-group>
+            <label>Select Multiple Disabled</label>
+            <va-select
+              :list="selectList"
+              :isMultiple="true"
+              :isDisabled="true"
+            ></va-select>
+          </va-form-group>
+
         </div>
 
       </va-box>
@@ -398,9 +430,21 @@ import VAButton from '../../components/VAButton'
 import VATextareaGroup from '../../components/VATextareaGroup'
 import VAFormGroup from '../../components/VAFormGroup'
 import VARadio from '../../components/VARadio'
+import VASelect from '../../components/VASelect'
 
 export default {
   name: 'general-elements',
+  data () {
+    return {
+      selectList: [
+        'option1',
+        'option2',
+        'option3',
+        'option4',
+        'option5'
+      ]
+    }
+  },
   created () {
 
   },
@@ -412,7 +456,8 @@ export default {
     'va-button': VAButton,
     'va-textarea-group': VATextareaGroup,
     'va-form-group': VAFormGroup,
-    'va-radio': VARadio
+    'va-radio': VARadio,
+    'va-select': VASelect
   }
 }
 </script>
