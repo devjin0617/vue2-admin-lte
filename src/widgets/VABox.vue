@@ -16,6 +16,10 @@
     </div>
     <!-- /.box-body -->
 
+    <div v-if="$slots.footer" class="box-footer">
+      <slot name="footer"></slot>
+    </div>
+
     <div v-if="this.isLoading" class="overlay">
       <i class="fa fa-refresh fa-spin"></i>
     </div>

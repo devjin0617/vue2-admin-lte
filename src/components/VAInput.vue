@@ -1,11 +1,29 @@
 <template>
 
-  <input :type="type"
+  <div v-if="isHorizontal"
+    class="form-group"
+  >
+
+    <label :for="vaId" class="col-sm-2 control-label">{{ title }}</label>
+    <div class="col-sm-10">
+      <input
+        :type="type"
+        :class="[formControl, getSize]"
+        :id="vaId"
+        :placeholder="placeholder"
+        :value="value">
+      </input>
+    </div>
+
+  </div>
+  <input v-else
+         :type="type"
          :class="[formControl, getSize]"
          :id="vaId"
          :placeholder="placeholder"
          :value="value">
   </input>
+
 
 </template>
 
@@ -33,6 +51,13 @@ export default {
     isFormControl: {
       type: Boolean,
       default: true
+    },
+    isHorizontal: {
+      type: Boolean,
+      default: false
+    },
+    title: {
+      type: String
     }
   },
   computed: {

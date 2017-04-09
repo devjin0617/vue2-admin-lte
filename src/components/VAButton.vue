@@ -1,6 +1,6 @@
 <template>
-  <button type="button" class="btn btn-block"
-    :class="[btnTheme, disabled, flat, size]"
+  <button type="button" class="btn"
+    :class="[isBlock?'btn-block':'', btnTheme, disabled, flat, size, getAlign]"
   >
     {{name}}
     <slot></slot>
@@ -30,6 +30,14 @@ export default {
     size: {
       type: String,
       default: ''
+    },
+    isBlock: {
+      type: Boolean,
+      default: true
+    },
+    align: {
+      type: String,
+      default: ''
     }
   },
   created () {
@@ -44,6 +52,17 @@ export default {
     },
     flat () {
       return this.isFlat ? 'btn-flat' : ''
+    },
+    getAlign () {
+      switch (this.align) {
+        case 'left':
+        case 'right':
+          break
+        default:
+          return ''
+      }
+
+      return 'pull-' + this.align
     }
   }
 }

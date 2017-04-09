@@ -221,6 +221,58 @@
       </va-box>
 
     </column>
+
+    <column class="col-md-6">
+      <va-box
+        title="Horizontal Form"
+        theme="box-info"
+        widgetType="">
+
+        <div slot="content">
+
+
+          <form class="form-horizontal">
+
+            <va-input
+              :isHorizontal="true"
+              title="Email"
+              placeholder="Email"
+              type="email"
+              vaId="horizontal-email"
+              >
+
+            </va-input>
+
+            <va-input
+              :isHorizontal="true"
+              title="Password"
+              placeholder="Password"
+              type="password"
+              vaId="horizontal-email"
+              >
+
+            </va-input>
+
+            <va-checkbox
+              :isHorizontal="true"
+              text="Check me out..."
+            >
+            </va-checkbox>
+
+          </form>
+
+        </div>
+
+        <div slot="footer">
+
+          <va-button :isBlock="false" name="Cancel"></va-button>
+          <va-button :isBlock="false" theme="info" align="right" name="Sign in"></va-button>
+
+        </div>
+
+      </va-box>
+
+    </column>
   </row>
 </template>
 
