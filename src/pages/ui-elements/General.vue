@@ -259,7 +259,7 @@
 
         <va-box
           title="Progress Bars Different Sizes"
-          :isBorder="true"
+          :isSolid="true"
           widgetType=""
         >
           <div slot="content">
@@ -312,7 +312,7 @@
 
         <va-box
           title="Progress bars"
-          :isBorder="true"
+          :isSolid="true"
           widgetType=""
           >
           <div slot="content">
@@ -367,7 +367,7 @@
       <div class="col-md-6">
 
         <va-box title="Vertical Progress Bars Different Sizes"
-            :isBorder="true"
+            :isSolid="true"
             widgetType="">
           <div slot="content" class="text-center">
 
@@ -425,7 +425,7 @@
 
         <va-box
           title="Vertical Progress bars"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <div slot="content" class="text-center">
 
@@ -482,7 +482,7 @@
 
         <va-box
           title="Collapsible Accordion"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
 
           <div slot="content" class="text-center">
@@ -503,7 +503,7 @@
       <div class="col-md-6">
         <va-box
           title="Carousel"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
 
           <div slot="content">
@@ -529,7 +529,7 @@
       <div class="col-md-6">
         <va-box
           title="Headlines"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -555,7 +555,7 @@
 
         <va-box
           title="Text Emphasis"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -604,7 +604,7 @@
 
         <va-box
           title="Block Quotes"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -624,7 +624,7 @@
 
         <va-box
           title="Block Quotes Pulled Right"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -648,7 +648,7 @@
 
         <va-box
           title="Unordered Lists"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -680,7 +680,7 @@
 
         <va-box
           title="Ordered Lists"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -712,7 +712,7 @@
 
         <va-box
           title="Unstyled Lists"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -747,7 +747,7 @@
 
         <va-box
           title="Description"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 
@@ -773,7 +773,7 @@
 
         <va-box
           title="Description Horizontal"
-          :isBorder="true"
+          :isSolid="true"
           widgetType="">
           <i slot="icon-title" class="fa fa-text-width"></i>
 

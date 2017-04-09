@@ -1,6 +1,6 @@
 <template>
-  <div class="box" :class="[theme, this.isOpen?'':'collapsed-box', isBorder?'box-solid':'']">
-    <div class="box-header" :class="isBorder?'with-border':''">
+  <div class="box" :class="[theme, this.isOpen?'':'collapsed-box', isSolid?'box-solid':'']">
+    <div class="box-header" :class="(isBorder || isSolid)?'with-border':''">
       <slot name="icon-title"></slot>
       <h3 class="box-title">{{ title }}</h3>
 
@@ -49,6 +49,10 @@ export default {
       default: true
     },
     isLoading: {
+      type: Boolean,
+      default: false
+    },
+    isSolid: {
       type: Boolean,
       default: false
     },

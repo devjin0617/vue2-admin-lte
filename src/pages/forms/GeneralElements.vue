@@ -5,6 +5,7 @@
       <va-box
           title="Quick Example"
           theme="box-primary"
+          :isBorder="true"
           widgetType="">
 
           <div slot="content">
@@ -44,6 +45,7 @@
       <va-box
           title="Different Height"
           theme="box-success"
+          :isBorder="true"
           widgetType="">
 
           <div slot="content">
@@ -69,6 +71,7 @@
       <va-box
           title="Different Width"
           theme="box-danger"
+          :isBorder="true"
           widgetType="">
 
           <div slot="content">
@@ -92,6 +95,7 @@
       <va-box
         title="Input Addon"
         theme="box-info"
+        :isBorder="true"
         widgetType="">
 
           <div slot="content">
@@ -226,6 +230,7 @@
       <va-box
         title="Horizontal Form"
         theme="box-info"
+        :isBorder="true"
         widgetType="">
 
         <div slot="content">
@@ -267,6 +272,19 @@
 
           <va-button :isBlock="false" name="Cancel"></va-button>
           <va-button :isBlock="false" theme="info" align="right" name="Sign in"></va-button>
+
+        </div>
+
+      </va-box>
+
+      <va-box
+        title="General Elements"
+        :isBorder="true"
+        theme="box-warning"
+        widgetType="">
+
+        <div slot="content">
+
 
         </div>
 

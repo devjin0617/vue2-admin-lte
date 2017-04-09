@@ -174,7 +174,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-default"
-          :isBorder="true"
+          :isSolid="true"
           title="Expandable"
           :isOpen="false"
         >
@@ -186,7 +186,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-success"
-          :isBorder="true"
+          :isSolid="true"
           title="Expandable"
         >
           <div slot="content">
@@ -197,7 +197,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-warning"
-          :isBorder="true"
+          :isSolid="true"
           title="Expandable"
         >
           <div slot="content">
@@ -208,7 +208,7 @@
       <div class="col-md-3 col-sm-6 col-xs-12">
         <va-box
           theme="box-danger"
-          :isBorder="true"
+          :isSolid="true"
           title="Expandable"
           :isLoading="true"
         >
