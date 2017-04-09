@@ -3,8 +3,8 @@
     <label v-if="$slots.title" class="control-label">
       <slot name="title"></slot>
     </label>
-    <label v-else :for="vaId">
-      <span v-if="title">{{ title }}</span>
+    <label v-else-if="title" :for="vaId">
+      <span>{{ title }}</span>
     </label>
     <div v-if="$slots.slotPrefixButton" class="input-group-btn">
       <slot name="slotPrefixButton"></slot>

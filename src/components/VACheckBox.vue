@@ -11,7 +11,7 @@
   </div>
   <div v-else class="checkbox">
     <label>
-      <input type="checkbox" />{{ text }}
+      <input type="checkbox" :disabled="isDisabled"/>{{ text }}
     </label>
   </div>
 </template>
@@ -25,6 +25,10 @@ export default {
       default: 'Check me out'
     },
     isHorizontal: {
+      type: Boolean,
+      default: false
+    },
+    isDisabled: {
       type: Boolean,
       default: false
     }

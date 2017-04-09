@@ -334,6 +334,53 @@
             </label>
           </va-input-group>
 
+          <va-form-group>
+
+            <va-checkbox
+              text="Checkbox 1"
+            ></va-checkbox>
+
+            <va-checkbox
+              text="Checkbox 2"
+            ></va-checkbox>
+
+            <va-checkbox
+              text="Checkbox disabled"
+              :isDisabled="true"
+            ></va-checkbox>
+
+          </va-form-group>
+
+          <va-form-group>
+
+            <va-radio
+              name="optionsRadios"
+              vaId="optionsRadios1"
+              value="option1"
+              :isChecked="true"
+            >
+              Option one is this and that&mdash;be sure to include why it's great
+            </va-radio>
+
+            <va-radio
+              name="optionsRadios"
+              vaId="optionsRadios2"
+              value="option2"
+            >
+              Option two can be something else and selecting it will deselect option one
+            </va-radio>
+
+            <va-radio
+              name="optionsRadios"
+              vaId="optionsRadios3"
+              value="option3"
+              :isDisabled="true"
+            >
+              Option three is disabled
+            </va-radio>
+
+          </va-form-group>
+
         </div>
 
       </va-box>
@@ -349,6 +396,8 @@ import VACheckBox from '../../components/VACheckBox'
 import VAInput from '../../components/VAInput'
 import VAButton from '../../components/VAButton'
 import VATextareaGroup from '../../components/VATextareaGroup'
+import VAFormGroup from '../../components/VAFormGroup'
+import VARadio from '../../components/VARadio'
 
 export default {
   name: 'general-elements',
@@ -361,7 +410,9 @@ export default {
     'va-checkbox': VACheckBox,
     'va-input': VAInput,
     'va-button': VAButton,
-    'va-textarea-group': VATextareaGroup
+    'va-textarea-group': VATextareaGroup,
+    'va-form-group': VAFormGroup,
+    'va-radio': VARadio
   }
 }
 </script>
