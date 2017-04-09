@@ -21,7 +21,8 @@
          :class="[formControl, getSize]"
          :id="vaId"
          :placeholder="placeholder"
-         :value="value">
+         :value="value"
+         :disabled="isDisabled">
   </input>
 
 
@@ -58,6 +59,10 @@ export default {
     },
     title: {
       type: String
+    },
+    isDisabled: {
+      type: Boolean,
+      default: false
     }
   },
   computed: {

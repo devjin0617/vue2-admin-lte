@@ -1,6 +1,11 @@
 <template>
-  <div :class="groupType + '-group'">
-    <label v-if="title" :for="vaId">{{ title }}</label>
+  <div :class="[groupType + '-group', getTheme]">
+    <label v-if="$slots.title" class="control-label">
+      <slot name="title"></slot>
+    </label>
+    <label v-else :for="vaId">
+      <span v-if="title">{{ title }}</span>
+    </label>
     <div v-if="$slots.slotPrefixButton" class="input-group-btn">
       <slot name="slotPrefixButton"></slot>
       <slot name="slotPrefixDropdown"></slot>
@@ -16,6 +21,7 @@
         :size="size"
         :value="value"
         :isFormControl="type!='file'"
+        :isDisabled="isDisabled"
     ></va-input>
     <span v-if="suffixAddonText || $slots.slotSuffixAddonText" class="input-group-addon">
       {{ suffixAddonText }}
@@ -37,6 +43,9 @@ export default {
     groupType: {
       type: String,
       default: 'form'
+    },
+    theme: {
+      type: String
     },
     title: {
       type: String
@@ -66,6 +75,19 @@ export default {
     },
     suffixAddonText: {
       type: String
+    },
+    isDisabled: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    getTheme () {
+      if (!this.theme) {
+        return ''
+      }
+
+      return 'has-' + this.theme
     }
   },
   created () {

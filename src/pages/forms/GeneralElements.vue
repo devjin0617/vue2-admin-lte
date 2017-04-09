@@ -285,6 +285,54 @@
 
         <div slot="content">
 
+          <va-input-group
+            title="Text"
+            vaId="ge-text-input"
+            placeholder="Enter ..."
+            >
+          </va-input-group>
+
+          <va-input-group
+            title="Text Disabled"
+            vaId="ge-text-input-disabled"
+            placeholder="Enter ..."
+            :isDisabled="true"
+            >
+          </va-input-group>
+
+          <va-textarea-group
+            title="Textarea"
+            :isDisabled="true"
+            placeholder="Enter ..."
+          >
+          </va-textarea-group>
+
+          <va-input-group
+            theme="success"
+            helpBlock="Help block with success"
+          >
+            <label slot="title">
+              <i class="fa fa-check"></i> Input with success</label>
+            </label>
+          </va-input-group>
+
+          <va-input-group
+            theme="warning"
+            helpBlock="Help block with success"
+          >
+            <label slot="title">
+              <i class="fa fa-bell-o"></i> Input with warning</label>
+            </label>
+          </va-input-group>
+
+          <va-input-group
+            theme="error"
+            helpBlock="Help block with success"
+          >
+            <label slot="title">
+              <i class="fa fa-times-circle-o"></i> Input with error</label>
+            </label>
+          </va-input-group>
 
         </div>
 
@@ -300,6 +348,7 @@ import VAInputGroup from '../../components/VAInputGroup'
 import VACheckBox from '../../components/VACheckBox'
 import VAInput from '../../components/VAInput'
 import VAButton from '../../components/VAButton'
+import VATextareaGroup from '../../components/VATextareaGroup'
 
 export default {
   name: 'general-elements',
@@ -311,7 +360,8 @@ export default {
     'va-input-group': VAInputGroup,
     'va-checkbox': VACheckBox,
     'va-input': VAInput,
-    'va-button': VAButton
+    'va-button': VAButton,
+    'va-textarea-group': VATextareaGroup
   }
 }
 </script>
