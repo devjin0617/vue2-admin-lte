@@ -224,9 +224,15 @@
 
 <script>
 import { mapGetters } from 'vuex'
+imrpot VASlideItem from './components/VASlideItem'
 
 export default {
   name: 'slider',
+  props: {
+    slideItems: {
+      type: Array
+    }
+  },
   created () {
 
   },
@@ -234,6 +240,9 @@ export default {
     ...mapGetters([
       'currentUser'
     ])
+  },
+  components: {
+    'va-slide-item': VASlideItem
   }
 }
 </script>
