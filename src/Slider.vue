@@ -224,7 +224,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-imrpot VASlideItem from './components/VASlideItem'
+import VASlideItem from './components/VASlideItem'
 
 export default {
   name: 'slider',
