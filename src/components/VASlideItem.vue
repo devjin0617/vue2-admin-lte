@@ -21,24 +21,24 @@
 
 <script>
 export default {
-  name: 'va-slide-item,
+  name: 'va-slide-item',
   props: {
     type: {
       type: String,
       default: 'li'
-    }
+    },
     name: {
       type: String
     }
   },
   created () {
 
-  }
+  },
   computed: {
     getType () {
       return {
         tag: this.type,
-        className: this.type == 'li' ? '':'treeview'
+        className: this.type === 'li' ? '' : 'treeview'
       }
     }
   }
