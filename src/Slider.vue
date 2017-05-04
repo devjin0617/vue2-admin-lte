@@ -28,6 +28,7 @@
         <va-slide-item
           v-for="item in slideMenuItems"
           :type="item.type"
+          :isHeader="item.isHeader"
           :icon="item.icon"
           :name="item.name"
           :badge="item.badge"

@@ -1,5 +1,13 @@
 <template>
-  <li class="getType" v-if="!router.name">
+  <router-link v-if="router && router.name" :to="router.name">
+    <a href="#">
+      <i :class="icon"></i> <span>{{ name }}</span>
+      <span class="pull-right-container" v-show="badge">
+        <small class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
+      </span>
+    </a>
+  </router-link>
+  <li :class="getType" v-else>
     <a href="#">
       <i :class="icon"></i> <span>{{ name }}</span>
       <span class="pull-right-container">
@@ -15,14 +23,6 @@
       </router-link>
     </ul>
   </li>
-  <router-link v-else-if="!router.name">
-    <a href="#">
-      <i :class="icon"></i> <span>{{ name }}</span>
-      <span class="pull-right-container" v-show="badge">
-        <small class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
-      </span>
-    </a>
-  </router-link>
 </template>
 
 <script>
@@ -32,6 +32,10 @@ export default {
     type: {
       type: String,
       default: 'item'
+    },
+    isHeader: {
+      type: Boolean,
+      default: false
     },
     icon: {
       type: String,
@@ -62,10 +66,10 @@ export default {
   },
   computed: {
     getType () {
-      return {
-        tag: this.type,
-        className: this.type === 'item' ? '' : 'treeview'
+      if (this.isHeader) {
+        return 'header'
       }
+      return this.type === 'item' ? '' : 'treeview'
     }
   }
 }
