@@ -1,22 +1,28 @@
 <template>
-  <li class="getType">
+  <li class="getType" v-if="!router.name">
     <a href="#">
-      <i class="fa fa-laptop"></i>
-      <span>{{ name }}</span>
+      <i :class="icon"></i> <span>{{ name }}</span>
       <span class="pull-right-container">
-        <i class="fa fa-angle-left pull-right"></i>
+        <small v-if="badge" class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
+        <i v-else class="fa fa-angle-left pull-right"></i>
       </span>
     </a>
-    <ul class="treeview-menu">
-      <router-link tag="li" :to="{ name: 'General' }">
-        <a href=""><i class="fa fa-circle-o"></i> General</a>
+    <ul class="treeview-menu" v-if="items">
+      <router-link v-for="item in items" :to="item.router.name">
+        <a :href="item.link">
+          <i :class="item.icon"> {{ item.name }}</i>
+        </a>
       </router-link>
     </ul>
   </li>
-
-  <!--
-  <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-  -->
+  <router-link v-else-if="!router.name">
+    <a href="#">
+      <i :class="icon"></i> <span>{{ name }}</span>
+      <span class="pull-right-container" v-show="badge">
+        <small class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
+      </span>
+    </a>
+  </router-link>
 </template>
 
 <script>
@@ -36,7 +42,7 @@ export default {
     },
     badge: {
       type: Object,
-      default: {}
+      default: null
     },
     items: {
       type: Array,

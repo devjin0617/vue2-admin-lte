@@ -2,7 +2,7 @@
   <div id="app">
     <div class="wrapper">
       <NaviBar></NaviBar>
-      <Slider></Slider>
+      <Slider :slideMenuItems="slideMenuItems"></Slider>
       <ContentWrap></ContentWrap>
       <Modal></Modal>
     </div>
