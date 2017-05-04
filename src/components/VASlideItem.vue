@@ -1,5 +1,5 @@
 <template>
-  <li class="treeview">
+  <li class="getType">
     <a href="#">
       <i class="fa fa-laptop"></i>
       <span>{{ name }}</span>
@@ -25,7 +25,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: 'li'
+      default: 'item'
     },
     name: {
       type: String
@@ -38,7 +38,7 @@ export default {
     getType () {
       return {
         tag: this.type,
-        className: this.type === 'li' ? '' : 'treeview'
+        className: this.type === 'item' ? '' : 'treeview'
       }
     }
   }
