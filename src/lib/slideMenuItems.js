@@ -105,7 +105,10 @@ module.exports = [
     type: 'tree',
     icon: 'fa fa-files-o',
     name: 'Layout Options',
-    badges: 4,
+    badge: {
+      type: 'Number',
+      data: 4
+    },
     items: [
       {
         type: 'item',
@@ -130,6 +133,100 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Collapsed Sidebar',
         link: 'page/layout/collapsed-sidebar.html'
+      }
+    ]
+  },
+  {
+    type: 'item',
+    icon: 'fa fa-th',
+    name: 'Widgets',
+    badge: {
+      type: 'String',
+      data: 'new'
+    },
+    router: {
+      name: 'WidgetsExample'
+    }
+  },
+  {
+    type: 'tree',
+    icon: 'fa fa-laptop',
+    name: 'UI Elements',
+    items: [
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'General',
+        router: {
+          to: 'General'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Icons',
+        router: {
+          to: 'Icons'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Buttons',
+        router: {
+          to: 'Buttons'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Sliders',
+        router: {
+          to: 'Sliders'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Timeline',
+        router: {
+          to: 'Timeline'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Modals',
+        router: {
+          to: 'Modals'
+        }
+      }
+    ]
+  },
+  {
+    type: 'tree',
+    icon: 'fa fa-edit',
+    name: 'Forms',
+    items: [
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'General Elements',
+        router: {
+          name: 'GeneralElements'
+        }
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Advanced Elements',
+        link: 'pages/forms/advanced.html'
+      },
+      {
+        type: 'item',
+        icon: 'fa fa-circle-o',
+        name: 'Editors',
+        link: 'pages/forms/editors.html'
       }
     ]
   }
