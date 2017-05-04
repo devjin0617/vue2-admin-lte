@@ -27,8 +27,28 @@ export default {
       type: String,
       default: 'item'
     },
+    icon: {
+      type: String,
+      default: ''
+    },
     name: {
       type: String
+    },
+    badge: {
+      type: Object,
+      default: {}
+    },
+    items: {
+      type: Array,
+      default: []
+    },
+    router: {
+      type: Object,
+      default: {}
+    },
+    link: {
+      type: String,
+      default: ''
     }
   },
   created () {
