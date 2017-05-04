@@ -15,9 +15,15 @@ import Slider from 'Slider.vue'
 import ContentWrap from 'ContentWrap.vue'
 import Modal from './components/Modal.vue'
 import store from './vuex/store.js'
+import slideMenuItems from './lib/slideMenuItems.js'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      slideMenuItems: slideMenuItems
+    }
+  },
   created () {
   },
   components: {
