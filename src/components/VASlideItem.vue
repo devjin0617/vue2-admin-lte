@@ -1,5 +1,5 @@
 <template>
-  <router-link tag="li" v-if="router && router.name" :to="router.name">
+  <router-link tag="li" v-if="router && router.name" :to="router">
     <a href="#">
       <i :class="icon"></i> <span>{{ name }}</span>
       <span class="pull-right-container" v-show="badge">
@@ -17,8 +17,8 @@
       </span>
     </a>
     <ul class="treeview-menu" v-if="items.length > 0">
-      <router-link v-for="item in items" :to="item.router.name">
-        <a :href="item.link">
+      <router-link tag="li" v-for="item in items" :to="item.router">
+        <a>
           <i :class="item.icon"> {{ item.name }}</i>
         </a>
       </router-link>

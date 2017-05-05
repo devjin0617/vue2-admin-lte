@@ -14,9 +14,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: '헬로화면',
         router: {
-          to: {
-            name: 'Hello'
-          }
+          name: 'Hello'
         }
       },
       {
@@ -24,9 +22,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: '샘플화면',
         router: {
-          to: {
-            name: 'Sample'
-          }
+          name: 'Sample'
         }
       },
       {
@@ -34,9 +30,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Dashboard v1',
         router: {
-          to: {
-            name: 'DashboardV1'
-          }
+          name: 'DashboardV1'
         }
       },
       {
@@ -44,9 +38,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Dashboard v2',
         router: {
-          to: {
-            name: 'DashboardV2'
-          }
+          name: 'DashboardV2'
         }
       },
       {
@@ -54,9 +46,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'InfoBox',
         router: {
-          to: {
-            name: 'InfoBoxExample'
-          }
+          name: 'InfoBoxExample'
         }
       },
       {
@@ -64,9 +54,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Chart.js',
         router: {
-          to: {
-            name: 'ChartExample'
-          }
+          name: 'ChartExample'
         }
       },
       {
@@ -74,9 +62,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Alert',
         router: {
-          to: {
-            name: 'AlertExample'
-          }
+          name: 'AlertExample'
         }
       },
       {
@@ -84,9 +70,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Modal',
         router: {
-          to: {
-            name: 'ModalExample'
-          }
+          name: 'ModalExample'
         }
       },
       {
@@ -94,9 +78,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'APIExample',
         router: {
-          to: {
-            name: 'APIExample'
-          }
+          name: 'APIExample'
         }
       }
     ]
@@ -158,7 +140,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'General',
         router: {
-          to: 'General'
+          name: 'General'
         }
       },
       {
@@ -166,7 +148,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Icons',
         router: {
-          to: 'Icons'
+          name: 'Icons'
         }
       },
       {
@@ -174,7 +156,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Buttons',
         router: {
-          to: 'Buttons'
+          name: 'Buttons'
         }
       },
       {
@@ -182,7 +164,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Sliders',
         router: {
-          to: 'Sliders'
+          name: 'Sliders'
         }
       },
       {
@@ -190,7 +172,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Timeline',
         router: {
-          to: 'Timeline'
+          name: 'Timeline'
         }
       },
       {
@@ -198,7 +180,7 @@ module.exports = [
         icon: 'fa fa-circle-o',
         name: 'Modals',
         router: {
-          to: 'Modals'
+          name: 'Modals'
         }
       }
     ]
