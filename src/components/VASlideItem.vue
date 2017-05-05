@@ -8,7 +8,8 @@
     </a>
   </router-link>
   <li :class="getType" v-else>
-    <a href="#">
+    {{ isHeader ? name : '' }}
+    <a href="#" v-if="!isHeader">
       <i :class="icon"></i> <span>{{ name }}</span>
       <span class="pull-right-container">
         <small v-if="badge" class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
