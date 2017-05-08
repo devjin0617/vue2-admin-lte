@@ -47,15 +47,23 @@ export default {
     },
     badge: {
       type: Object,
-      default: null
+      default () {
+        return {}
+      }
     },
     items: {
       type: Array,
-      default: []
+      default () {
+        return []
+      }
     },
     router: {
       type: Object,
-      default: {}
+      default () {
+        return {
+          name: ''
+        }
+      }
     },
     link: {
       type: String,

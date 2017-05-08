@@ -266,7 +266,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-  name: 'NaviBar',
+  name: 'va-navibar',
   computed: {
     ...mapGetters([
       'unreadMessagesCount',

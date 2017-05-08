@@ -48,10 +48,11 @@ import { mapGetters } from 'vuex'
 import VASlideItem from './components/VASlideItem'
 
 export default {
-  name: 'slider',
+  name: 'va-slider',
   props: {
     slideMenuItems: {
-      type: Array
+      type: Array,
+      default: []
     }
   },
   created () {
