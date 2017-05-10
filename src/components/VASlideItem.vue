@@ -12,16 +12,21 @@
     <a href="#" v-if="!isHeader">
       <i :class="icon"></i> <span>{{ name }}</span>
       <span class="pull-right-container">
-        <small v-if="badge" class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
+        <small v-if="badge && badge.data" class="label pull-right" :class="[badge.type==='String'?'bg-green':'label-primary']">{{ badge.data }}</small>
         <i v-else class="fa fa-angle-left pull-right"></i>
       </span>
     </a>
     <ul class="treeview-menu" v-if="items.length > 0">
-      <router-link tag="li" v-for="item in items" :to="item.router">
+      <router-link tag="li" v-for="item in items" :to="item.router" v-if="item.router && item.router.name">
         <a>
           <i :class="item.icon"> {{ item.name }}</i>
         </a>
       </router-link>
+      <li v-else>
+        <a>
+          <i :class="item.icon"> {{ item.name }}</i>
+        </a>
+      </li>
     </ul>
   </li>
 </template>
