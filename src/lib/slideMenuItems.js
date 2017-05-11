@@ -202,7 +202,9 @@ module.exports = [
         type: 'item',
         icon: 'fa fa-circle-o',
         name: 'Advanced Elements',
-        link: 'pages/forms/advanced.html'
+        router: {
+          name: 'AdvancedElements'
+        }
       },
       {
         type: 'item',
