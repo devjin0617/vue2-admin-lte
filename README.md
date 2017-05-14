@@ -18,6 +18,10 @@
 
 ![](https://github.com/devjin0617/vue2-admin-lte/blob/master/capture.png?raw=true)
 
+## Documentation
+
+> [https://devjin0617.gitbooks.io/vue2-admin-lte-guide/](https://devjin0617.gitbooks.io/vue2-admin-lte-guide/)
+
 ## Demo Build Setup
 
 ``` bash
