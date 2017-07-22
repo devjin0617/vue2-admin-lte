@@ -7,6 +7,7 @@
           icon="ion-bag"
           title="150"
           description="New Order"
+          @more-click="clickToSmallBox"
           moreText="More info">
         </va-small-box>
       </div>
@@ -64,6 +65,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    clickToSmallBox () {
+      alert('click!!!: clickToSmallBox')
     }
   },
   components: {
