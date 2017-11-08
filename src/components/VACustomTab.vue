@@ -1,7 +1,7 @@
 <template>
   <div class="nav-tabs-custom">
     <ul class="nav nav-tabs" :class="tabsClass">
-      <li v-for="(tab, index) in tabList" :class="tab.class">
+      <li v-for="(tab, index) in tabList" :data="tab" :key="index" :class="tab.class">
         <a :href="tab.id" data-toggle="tab">{{tab.title}}</a>
       </li>
       <slot name="nav"></slot>

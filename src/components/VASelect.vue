@@ -1,6 +1,6 @@
 <template>
   <select class="form-control" :disabled="isDisabled" :multiple="isMultiple">
-    <option v-for="item in list">
+    <option v-for="(item,index) in list" :data="item" :key="index">
       {{ item }}
     </option>
   </select>
