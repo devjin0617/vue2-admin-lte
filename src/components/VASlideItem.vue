@@ -17,7 +17,7 @@
       </span>
     </a>
     <ul class="treeview-menu" v-if="items.length > 0">
-      <router-link tag="li" v-for="item in items" :to="item.router" v-if="item.router && item.router.name">
+      <router-link tag="li" v-for="(item,index) in items" :data="item" :key="index" :to="item.router" v-if="item.router && item.router.name">
         <a>
           <i :class="item.icon"> {{ item.name }}</i>
         </a>

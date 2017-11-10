@@ -4,12 +4,12 @@
        class="carousel slide"
        data-ride="carousel">
     <ol class="carousel-indicators">
-      <li :data-target="`#${name}`" v-for="(item, index) in list"
+      <li :data-target="`#${name}`" v-for="(item, index) in list" :data="item" :key="index"
           :data-slide-to="index"
           class="startIndex"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="item" :class="index==startIndex?'active':''" v-for="(item, index) in list">
+      <div class="item" :class="index==startIndex?'active':''" v-for="(item, index) in list" :data="item" :key="index">
         <img :src="item.image"
              :alt="item.text">
 

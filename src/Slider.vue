@@ -24,9 +24,11 @@
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu">
+      <ul data-widget="tree" class="sidebar-menu">
         <va-slide-item
-          v-for="item in slideMenuItems"
+          v-for="(item,index) in slideMenuItems"
+          :data="item"
+          :key="index"
           :type="item.type"
           :isHeader="item.isHeader"
           :icon="item.icon"
