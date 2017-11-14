@@ -72,7 +72,7 @@
         <h2>Dismissible Alerts</h2>
       </div>
       <div class="box-body">
-        <alert :dismissible="true">
+        <va-alert :dismissible="true">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -82,9 +82,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="success" :dismissible="true">
+        <va-alert type="success" :dismissible="true">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -94,9 +94,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="info" :dismissible="true">
+        <va-alert type="info" :dismissible="true">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -106,9 +106,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="warning" :dismissible="true">
+        <va-alert type="warning" :dismissible="true">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -118,9 +118,9 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
 
-        <alert type="danger" :dismissible="true">
+        <va-alert type="danger" :dismissible="true">
           <h4 slot="header">
             <i class="icon fa fa-check"></i> CoPilot is open source!
           </h4>
@@ -130,7 +130,7 @@
               <i class="fa fa-github fa-2x"></i>
             </a>
           </div>
-        </alert>
+        </va-alert>
       </div>
     </div>
 
