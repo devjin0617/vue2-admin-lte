@@ -22,6 +22,7 @@
 
         <va-direct-chat-item
           v-for="item in talkList"
+          :key="item.name"
           :name="item.name"
           :date="item.date"
           :profileImage="item.profileImage"
@@ -36,6 +37,7 @@
       <div class="direct-chat-contacts">
         <ul class="contacts-list">
           <va-direct-chat-contact v-for="contact in contacts"
+            :key="contact.name"
             :name="contact.name"
             :profileImage="contact.profileImage"
             :latestDate="contact.latestDate"
