@@ -138,6 +138,7 @@ export default {
           message: `You better believe it!`,
           isMine: true
         }
+      ]
     }
   },
   components: {
