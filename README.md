@@ -43,13 +43,13 @@ npm run build --report
 # run e2e tests: coming soon
 # npm run e2e
 
-# run all tests: comping soon
+# run all tests: coming soon
 # npm test
 ```
 
 ## How to use
 
-First, npm install
+First, install `vue2-admin-lte` via npm.
 
 ```bash
 $ npm i --save vue2-admin-lte
