@@ -43,7 +43,7 @@ export default {
     },
     vaId: {
       type: String
-    },
+    }
   },
   created () {
 
