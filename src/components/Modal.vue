@@ -1,7 +1,7 @@
 <template lang="html">
   <!-- Modal -->
-  <div class="modal fade" id="bsModal" tabindex="-1" role="dialog" aria-labelledby="bsModalLabel" data-toggle="modal" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog" role="document">
+  <div class="modal fade" id="bsModal" tabindex="-1" role="dialog" aria-labelledby="bsModalLabel" data-toggle="modal" data-backdrop="static" data-keyboard="false" @click="clickOverlay">
+    <div class="modal-dialog" role="document" @click.stop>
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -34,6 +34,7 @@ export default {
       this.confirmAfterHook = args.confirmAfter
       this.cancelBeforeHook = args.cancelBefore
       this.cancelAfterHook = args.cancelAfter
+      this.clickOverlayHook = args.clickOverlay
 
       $('#bsModal').modal('show')
     })
@@ -44,6 +45,10 @@ export default {
       this.confirmAfterHook()
       this.cancelAfterHook()
       this.resetProperties()
+    })
+
+    $('#bsModal').on('overlay.bs.modal', (e) => {
+      this.clickOverlayHook()
     })
   },
   data () {
@@ -56,7 +61,8 @@ export default {
       confirmBeforeHook: () => {},
       confirmAfterHook: () => {},
       cancelBeforeHook: () => {},
-      cancelAfterHook: () => {}
+      cancelAfterHook: () => {},
+      clickOverlayHook: () => {}
     }
   },
   methods: {
@@ -80,6 +86,9 @@ export default {
       this.confirmAfterHook = () => {}
       this.cancelBeforeHook = () => {}
       this.cancelAfterHook = () => {}
+    },
+    clickOverlay: function () {
+      this.clickOverlayHook()
     }
   }
 }
