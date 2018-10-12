@@ -96,25 +96,25 @@ module.exports = [
         type: 'item',
         icon: 'fa fa-circle-o',
         name: 'Top Navigation',
-        link: 'page/layout/top-nav.html'
+        link: 'https://adminlte.io/themes/AdminLTE/pages/layout/top-nav.html'
       },
       {
         type: 'item',
         icon: 'fa fa-circle-o',
         name: 'Boxed',
-        link: 'page/layout/boxed.html'
+        link: 'https://adminlte.io/themes/AdminLTE/pages/layout/boxed.html'
       },
       {
         type: 'item',
         icon: 'fa fa-circle-o',
         name: 'Fixed',
-        link: 'page/layout/fixed.html'
+        link: 'https://adminlte.io/themes/AdminLTE/pages/layout/fixed.html'
       },
       {
         type: 'item',
         icon: 'fa fa-circle-o',
         name: 'Collapsed Sidebar',
-        link: 'page/layout/collapsed-sidebar.html'
+        link: 'https://adminlte.io/themes/AdminLTE/pages/layout/collapsed-sidebar.html'
       }
     ]
   },

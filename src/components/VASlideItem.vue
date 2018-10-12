@@ -23,9 +23,16 @@
         </a>
       </router-link>
       <li v-else>
-        <a>
-          <i :class="item.icon"></i> {{ item.name }}
-        </a>
+        <template v-if="item.link">
+          <a :href="item.link">
+            <i :class="item.icon"></i> {{ item.name }}
+          </a>
+        </template>
+        <template v-else>
+          <a>
+            <i :class="item.icon"></i> {{ item.name }}
+          </a>
+        </template>
       </li>
     </ul>
   </li>
