@@ -34,6 +34,9 @@ export default {
         },
         cancelAfter: () => {
           window.alert('닫기 이후 훅')
+        },
+        clickOverlay: () => {
+          window.alert('오버레이 클릭 훅')
         }
       })
     }
