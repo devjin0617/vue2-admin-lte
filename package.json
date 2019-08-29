@@ -35,7 +35,7 @@
   "hompage": "https://github.com/devjin0617/vue2-admin-lte#readme",
   "dependencies": {
     "admin-lte": "^2.3.11",
-    "axios": "^0.15.3",
+    "axios": ">=0.18.1",
     "bootstrap": "^3.3.7",
     "bootstrap3-wysihtml5-bower": "^0.3.3",
     "chart.js": "^2.5.0",
