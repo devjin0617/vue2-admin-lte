@@ -199,3 +199,9 @@ Other things that will help resolve your issue:
 
 - Include screenshots and animated gif in your pull request whenever possible.
 - Use short, present tense commit messages.
+
+### links
+
+https://medium.com/@sergiturbadenas/creating-adminlte-vue-components-part-0-e735e3218f86
+https://medium.com/@sergiturbadenas/creating-adminlte-vue-components-part-1-designing-api-component-7a34ff64fb9c
+https://qiita.com/ultrasevenstar/items/e5e8dfecc92077aa7736
